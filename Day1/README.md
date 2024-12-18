@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-# 45-Days-Of-C-
-Here Anyone Can Learn C++ From Scratch (Beginner Friendly)
-=======
+
 # 45 Days of C++ :shipit:
 
 ## **MCQs**
@@ -66,5 +63,5 @@ Statement 3: Procedural programming is based on an unreal world.
    -[ ] statement (i) only true.
    -[ ] statement (ii) only true.
    -[ ] statement (iii) only
-   -[x] All the statements are true
->>>>>>> 475a81f (DAY 1)
+-[x] All the statements are true
+
