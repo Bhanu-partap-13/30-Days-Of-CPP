@@ -1,5 +1,5 @@
 
-# 45 Days of C++ :shipit:
+# 30 Days of C++ :shipit:
 
 ## **MCQs**
 
