@@ -305,3 +305,24 @@ John<br>
 8486<br>
 Output 2 :<br>
 8486: John<br>
+
+`Que`
+What will be the output of the given program?<br>
+```
+#include <iostream>
+using namespace std;
+
+int main() {
+    int x = 10;
+    cout << "Value of x: " << x++ << endl;
+    cout << "Updated value of x: " << x;
+    return 0;
+}
+```
+   - [ ] Value of x: 11<br>
+         Updated value of x: 10<br>
+   - [ ] Value of x: 11<br>
+         Updated value of x: 11<br>
+   - [x] Value of x: 10<br>
+         Updated value of x: 11<br>
+   - [ ] None of the Above<br>

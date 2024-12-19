@@ -31,9 +31,7 @@ class Box{
         // member functions
 }; //Don't forget to put semicolon at the end of the class 
 //------------------This is the class-------------
-
 // And Box b1, Box b2, Box b3; are the objects of the class Box
-
 //Accessing Data Members and Member Functions
 /*
 the data members and member functions of a class can be accessed using the dot operator (.) with the object of the class.
