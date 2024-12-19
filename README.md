@@ -5,6 +5,7 @@ Welcome to my **45 Days of C++** repository! This is a challenge where I will be
 ## Table of Contents
 
 - [Day 1](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day1)
+- [Day 2](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day2)
 
 ##working on
 - [Requirements](#requirements)
