@@ -1,5 +1,5 @@
 
-# 30 Days of C++ :shipit:
+# DAY 2 - Loops, Classes & Objects
 
 ## **MCQs**
 
@@ -326,3 +326,6 @@ int main() {
    - [x] Value of x: 10<br>
          Updated value of x: 11<br>
    - [ ] None of the Above<br>
+
+
+   > ~ By Bhanu Partap

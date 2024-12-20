@@ -1,5 +1,5 @@
 
-# 30 Days of C++ :shipit:
+# Day 1 - Basics, Datatypes, Operators
 
 ## **MCQs**
 
@@ -65,3 +65,4 @@ Statement 3: Procedural programming is based on an unreal world.<br>
    - [ ] statement (iii) only<br>
    - [x] All the statements are true<br>
 
+> ~ By Bhanu Partap
