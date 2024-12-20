@@ -158,21 +158,8 @@ The fifth line displays the salary of the employee, rounded off to one decimal p
 | 15/10/2018 | DOJ : 15/10/2018 |
 | 28085.31 | Salary : 28085.3 |
 
-<br>
 `solution`
-#include <iostream>
-#include <iomanip>
-#include <cstring>
-using namespace std;
 
-// Defining the union to store employee details
-union Employee {
-    int empID;
-    char name[21];
-    char dob[11];
-    char doj[11];
-    float salary;
-};
 ```
 \\cpp
 #include <iostream>
