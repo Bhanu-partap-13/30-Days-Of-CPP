@@ -7,6 +7,7 @@ Welcome to my **45 Days of C++** repository! This is a challenge where I will be
 - [Day 1](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day1)
 - [Day 2](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day2)
 - [Day 3](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day3)
+- [Day 4](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day4)
 
 
 
