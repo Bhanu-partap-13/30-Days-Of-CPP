@@ -8,6 +8,7 @@ Welcome to my **30 Days of C++** repository! This is a challenge where I will po
 - [Day 2](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day2)
 - [Day 3](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day3)
 - [Day 4](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day4)
+- [Day 5](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day5)
 
 
 
@@ -19,13 +20,13 @@ Make sure you have the following installed to follow along with the challenge:
 - Git for version control
 
 ## About the Challenge
-This challenge is designed to help you improve your C++ skills through daily practice. Each day, a new problem or topic will be posted, along with a detailed explanation and solution.
+This challenge will help you improve your C++ skills through daily practice.A new problem or topic will be posted each day, along with a detailed explanation and solution.
 
 ## How to Participate
 
 1. **Fork the Repository**: Click the "Fork" button at the top right of this page to create a copy of this repository on your GitHub account.
 2. **Clone the Repository**: Clone the forked repository to your local machine using `git clone`.
-3. **Start Coding**: Follow along with the daily challenges and commit your solutions.
+3. **Start Coding**: Follow the daily challenges and commit your solutions.
 4. **Share Your Progress**: Feel free to share your progress on social media using the hashtag #45DaysOfCPP.
 
 ## Support Me
