@@ -46,7 +46,7 @@
     - [ ] They can only be called by an object.
     - [x] They can be called without creating an object.
     - [ ] They are always inline.
-    
+
 ## Advanced Level Questions
 
 1. **Which of the following code correctly defines an inline function?**
@@ -268,9 +268,9 @@
     | 5 | Larger number: 10 |
     ---
 
-    **Solution:**
+**Solution:**
 
-    ```cpp
+```cpp
     // Solution for Problem 1
     #include <iostream>
     inline int square(int num) {
@@ -284,9 +284,9 @@
         std::cout << "Square of " << number << " is " << square(number) << std::endl;
         return 0;
     }
-    ```
+```
 
-    ```cpp
+```cpp
     // Solution for Problem 2
     #include <iostream>
 
@@ -305,9 +305,9 @@
         std::cout << "Number of objects created: " << Counter::count << std::endl;
         return 0;
     }
-    ```
+```
 
-    ```cpp
+```cpp
     // Solution for Problem 3
     #include <iostream>
     inline bool isEven(int num) {
@@ -325,9 +325,9 @@
         }
         return 0;
     }
-    ```
+```
 
-    ```cpp
+```cpp
     // Solution for Problem 4
     #include <iostream>
 
@@ -347,4 +347,6 @@
         std::cout << "Larger number: " << Compare::larger(num1, num2) << std::endl;
         return 0;
     }
-    ```
+```
+
+> ~This content was created by [Bhanu Partap](https://github.com/Bhanu-partap-13). If you have any questions or suggestions, feel free to reach out or contribute to the repository.
