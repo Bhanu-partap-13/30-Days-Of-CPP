@@ -23,6 +23,7 @@ int main()
     cout << "Day " << today + 1;
     return 0;
 }
+
 //Run the code and check the output. The output will be Day 4.  
 //In the above code, we have declared an enumeration named week which contains seven constants Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, and Saturday.
 

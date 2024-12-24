@@ -160,8 +160,8 @@ The fifth line displays the salary of the employee, rounded off to one decimal p
 
 `solution`
 
-```
-\\cpp
+```cpp
+
 #include <iostream>
 #include <iomanip>
 #include <cstring>

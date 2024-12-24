@@ -244,32 +244,32 @@ Output 2 :<br>
 
 `SOLUTION:`
 
-```
-#include <iostream>
-#include <string>
-using namespace std;
+``` cpp
+    #include <iostream>
+    #include <string>
+    using namespace std;
 
-class Input {
-public:
-    string name;
-    int rollNumber;
+    class Input {
+    public:
+        string name;
+        int rollNumber;
 
-    void readInput() {
-        getline(cin, name);
-        cin >> rollNumber;
+        void readInput() {
+            getline(cin, name);
+            cin >> rollNumber;
+        }
+
+        void display() {
+            cout << rollNumber << ": " << name;
+        }
+    };
+
+    int main() {
+        Input student;
+        student.readInput();
+        student.display();
+        return 0;
     }
-
-    void display() {
-        cout << rollNumber << ": " << name;
-    }
-};
-
-int main() {
-    Input student;
-    student.readInput();
-    student.display();
-    return 0;
-}
 ```
 
 <!--Homework Questions-->

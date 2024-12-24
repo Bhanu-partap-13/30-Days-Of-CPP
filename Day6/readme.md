@@ -339,7 +339,7 @@ int main() {
     cout << "Area of triangle: " << calculateArea(10.0, 5.0, 0) << endl;
     return 0;
 }
-```
+``` 
 
 ### Homework Question
 
