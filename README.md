@@ -10,7 +10,7 @@ Welcome to my **30 Days of C++** repository! This is a challenge where I will po
 - [Day 4](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day4)
 - [Day 5](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day5)
 - [Day 6](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day6)
-
+- [Day 7](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day7)
 
 
 ## Requirements
