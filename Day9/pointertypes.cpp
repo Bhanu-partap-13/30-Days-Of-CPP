@@ -18,7 +18,7 @@ How to use a pointer?
 1. Null Pointer
 syntax: int *ptr = 0;
 
-2. Wild Pointer
+2. Wild Pointergit 
 syntax: int *ptr;
 
 3. Dangling Pointer
