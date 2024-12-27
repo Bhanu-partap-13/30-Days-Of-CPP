@@ -288,6 +288,7 @@
         Here is the hidden content that becomes visible when you click the "Click here to reveal the solution" text.
 
     **Solution:**
+    
 ```cpp
     #include <iostream>
     #include <string>
