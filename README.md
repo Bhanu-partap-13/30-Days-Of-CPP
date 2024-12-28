@@ -4,16 +4,17 @@ Welcome to my **30 Days of C++** repository! This is a challenge where I will po
 
 ## Table of Contents
 
-- [Day 1](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day1)
-- [Day 2](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day2)
-- [Day 3](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day3)
-- [Day 4](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day4)
-- [Day 5](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day5)
-- [Day 6](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day6)
-- [Day 7](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day7)
-- [Day 8](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day8)
-- [Day 9](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day9)
+- [Day 01](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day01)
+- [Day 02](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day02)
+- [Day 03](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day03)
+- [Day 04](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day04)
+- [Day 05](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day05)
+- [Day 06](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day06)
+- [Day 07](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day07)
+- [Day 08](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day08)
+- [Day 09](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day09)
 - [Day 10](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day10)
+- [Day 11](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day11)
 
 
 ## Requirements
