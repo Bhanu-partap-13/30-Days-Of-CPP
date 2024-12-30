@@ -1,0 +1,4 @@
+# Automatically normalize line endings
+* text=auto
+*.cpp text eol=lf
+*.md text eol=lf
