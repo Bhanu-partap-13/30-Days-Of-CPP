@@ -16,7 +16,8 @@ Welcome to my **30 Days of C++** repository! This is a challenge where I will po
 - [Day 10](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day10)
 - [Day 11](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day11)
 - [Day 12](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day12)
-- [Day 13](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day13)
+- [Day 13](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day13) 
+- [Day 14](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day14) 
 
 
 ## Requirements
