@@ -19,6 +19,17 @@ Welcome to my **30 Days of C++** repository! This is a challenge where I will po
 - [Day 13](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day13)
 
 
+## How You Can Bring this to VS Code
+>[!Note]
+>1. Make a folder with any name.
+>2. Open that folder in VS Code.
+>3. Open the Terminal and then git Clone.
+>4. Make sure you Star and Fork the Repository.
+
+```bash
+git clone https://github.com/Bhanu-partap-13/30-Days-Of-CPP.git
+```
+
 ## Requirements
 Make sure you have the following installed to follow along with the challenge:
 
