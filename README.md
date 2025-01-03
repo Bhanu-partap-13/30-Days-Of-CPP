@@ -18,6 +18,9 @@ Welcome to my **30 Days of C++** repository! This is a challenge where I will po
 - [Day 12](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day12)
 - [Day 13](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day13) 
 - [Day 14](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day14) 
+- [Day 15](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day15) 
+- [Day 16](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day16) 
+- [Day 17](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day17) 
 
 
 ## How You Can Bring this to VS Code
