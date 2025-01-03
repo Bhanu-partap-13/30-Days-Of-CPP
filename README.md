@@ -68,10 +68,11 @@ git add .
 ```
 ```bash
 git commit -m "your changes"
-
+```
 ```bash
 git push origin branch-name
 ```
+
 >[!Note]
 >1. Go to your Github. You will se pull request by you.
 >2. Explain your changes and create pull request.
