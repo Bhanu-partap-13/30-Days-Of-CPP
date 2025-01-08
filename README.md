@@ -25,7 +25,10 @@ Welcome to my **30 Days of C++** repository! This is a challenge where I will po
 - [Day 19](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day19) 
 - [Day 20](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day20) 
 - [Day 21](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day21) 
+<<<<<<< HEAD
 - [Day 22](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day22) 
+=======
+>>>>>>> f66eac88d8d216b8989748d77b46a426a6cdf152
 
 
 ## Requirements
