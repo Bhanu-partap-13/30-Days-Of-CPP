@@ -1,6 +1,35 @@
-# 30 Days of C++ Challenge
+<div align = "center" id="top">
+<div align="center">
+<a href="#top">
 
-Welcome to my **30 Days of C++** repository! This is a challenge where I will post daily C++ coding problems, solutions, and important topics related to C++. The goal is to enhance my skills in C++ and document the learning process.
+# <p>30 Days of C++ Challenge
+</p>
+
+<i><p> Welcome to my **30 Days of C++** repository! This is a challenge where I will post daily C++ coding problems, solutions, and important topics related to C++. The goal is to enhance my skills in C++ and document the learning process.</p></i>
+
+</div>
+
+
+<table align="center">
+    <thead align="center">
+        <tr border: 1px;>
+            <td><b><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/tarikul-islam-anik/main/assets/images/Star.png" width="20" height="20"> Stars</b></td>
+            <td><b>🍴 Forks</b></td>
+            <td><b><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/tarikul-islam-anik/main/assets/images/Lady%20Beetle.png" width="20" height="20"> Issues</b></td>
+            <td><b><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/tarikul-islam-anik/main/assets/images/Check%20Mark%20Button.png" width="20" height="20"> Open PRs</b></td>
+            <td><b><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/tarikul-islam-anik/main/assets/images/Cross%20Mark.png" width="20" height="20"> Closed PRs</b></td>
+        </tr>
+     </thead>
+    <tbody>
+         <tr>
+            <td><img alt="Stars" src="https://img.shields.io/github/stars/Bhanu-partap-13/30-Days-Of-CPP?style=flat&logo=github"/></td>
+             <td><img alt="Forks" src="https://img.shields.io/github/forks/Bhanu-partap-13/30-Days-Of-CPP?style=flat&logo=github"/></td>
+            <td><img alt="Issues" src="https://img.shields.io/github/issues/Bhanu-partap-13/30-Days-Of-CPP?style=flat&logo=github"/></td>
+            <td><img alt="Open Pull Requests" src="https://img.shields.io/github/issues-pr/Bhanu-partap-13/30-Days-Of-CPP?style=flat&logo=github"/></td>
+           <td><img alt="Closed Pull Requests" src="https://img.shields.io/github/issues-pr-closed/Bhanu-partap-13/30-Days-Of-CPP?style=flat&color=critical&logo=github"/></td>
+        </tr>
+    </tbody>
+</table>
 
 ## Table of Contents
 
@@ -109,3 +138,46 @@ Feel free to visit the repository and check out the code:
 ![C++](https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif)
 
 Happy Coding! 🚀✨
+
+
+<br><br>
+
+ ## <h2 style="font-size:3rem;">Our Contributors<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Red%20Heart.png" alt="Red Heart" width="40" height="40" /></h2>
+  <h3>Thank you for contributing to our repository</h3>
+<a href="https://github.com/Bhanu-partap-13/30-Days-Of-CPP/graphs/contributors">
+<img src="https://contributors-img.web.app/image?repo=Bhanu-partap-13/30-Days-Of-CPP"/>
+
+## Stargazers
+
+<div align='center'>
+
+[![Stargazers repo roster for @Bhanu-partap-13/30-Days-Of-CPP](https://reporoster.com/stars/Bhanu-partap-13/30-Days-Of-CPP)](https://github.com/Bhanu-partap-13/30-Days-Of-CPP/stargazers)
+
+</div>
+
+## Forkers
+
+<div align='center'>
+
+[![Forkers repo roster for @Bhanu-partap-13/30-Days-Of-CPP](https://reporoster.com/forks/Bhanu-partap-13/30-Days-Of-CPP)](https://github.com/Bhanu-partap-13/30-Days-Of-CPP/network/members)
+
+</div>
+
+
+# Code of Conduct
+We are committed to fostering a welcoming and inclusive environment for everyone. All contributors and participants are expected to uphold the following values:
+
+- Be respectful of different viewpoints and experiences.
+- Show empathy toward others.
+- Use inclusive language.
+
+<div align="center">
+    <a href="#top">
+        <img src="https://img.shields.io/badge/Back%20to%20Top-000000?style=for-the-badge&logo=github&logoColor=white" alt="Back to Top">
+    </a>
+</div>
+
+<center>
+<h3 style="font-size:2rem;">
+If you find this project helpful, please consider giving it a star! <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/tarikul-islam-anik/main/assets/images/Star.png" width="30" height="30"></p>
+</center>
