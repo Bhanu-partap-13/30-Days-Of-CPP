@@ -28,6 +28,8 @@ Welcome to my **30 Days of C++** repository! This is a challenge where I will po
 - [Day 22](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day22) 
 - [Day 23](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day23) 
 - [Day 24](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day24) 
+- [Day 25](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day25) 
+- [Day 26](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day26) 
 
 
 ## Requirements
