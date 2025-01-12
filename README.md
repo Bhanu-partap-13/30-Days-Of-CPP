@@ -33,6 +33,24 @@
 
 ## Table of Contents
 
+
+|     Let's      |  Get Started           |
+|----------------|-------------------------------|
+| [![Day01](imgs/2.png)](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day01)| [![Day02](imgs/3.png)](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day02) | 
+| [![Day03](imgs/4.png)](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day03)| [![Day04](imgs/5.png)](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day04) | 
+| [![Day05](imgs/6.png)](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day05)| [![Day06](imgs/7.png)](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day06) | 
+| [![Day07](imgs/8.png)](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day07)| [![Day08](imgs/9.png)](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day08) | 
+| [![Day09](imgs/10.png)](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day09)| [![Day10](imgs/11.png)](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day10) | 
+| [![Day11](imgs/12.png)](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day11)| [![Day12](imgs/13.png)](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day12) | 
+| [![Day13](imgs/14.png)](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day13)| [![Day14](imgs/15.png)](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day14) | 
+| [![Day15](imgs/16.png)](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day15)| [![Day16](imgs/17.png)](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day16) | 
+| [![Day17](imgs/18.png)](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day17)| [![Day18](imgs/19.png)](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day18) | 
+| [![Day19](imgs/20.png)](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day19)| [![Day20](imgs/21.png)](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day20) | 
+| [![Day21](imgs/22.png)](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day21)| [![Day22](imgs/23.png)](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day22) | 
+| [![Day23](imgs/24.png)](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day23)| [![Day24](imgs/25.png)](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day24) | 
+| [![Day25](imgs/26.png)](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day25)| [![Day26](imgs/27.png)](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day26) | 
+
+
 - [Day 01](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day01)
 - [Day 02](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day02)
 - [Day 03](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day03)
