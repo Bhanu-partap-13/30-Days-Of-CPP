@@ -1,4 +1,4 @@
-<div align = "center" id="top">
+
 <div align="center">
 <a href="#top">
 
@@ -50,33 +50,6 @@
 | [![Day23](imgs/24.png)](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day23)| [![Day24](imgs/25.png)](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day24) | 
 | [![Day25](imgs/26.png)](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day25)| [![Day26](imgs/27.png)](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day26) | 
 
-
-- [Day 01](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day01)
-- [Day 02](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day02)
-- [Day 03](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day03)
-- [Day 04](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day04)
-- [Day 05](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day05)
-- [Day 06](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day06)
-- [Day 07](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day07)
-- [Day 08](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day08)
-- [Day 09](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day09)
-- [Day 10](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day10)
-- [Day 11](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day11)
-- [Day 12](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day12)
-- [Day 13](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day13) 
-- [Day 14](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day14) 
-- [Day 15](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day15) 
-- [Day 16](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day16) 
-- [Day 17](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day17) 
-- [Day 18](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day18) 
-- [Day 19](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day19) 
-- [Day 20](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day20) 
-- [Day 21](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day21) 
-- [Day 22](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day22) 
-- [Day 23](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day23) 
-- [Day 24](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day24) 
-- [Day 25](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day25) 
-- [Day 26](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day26) 
 
 
 ## Requirements
