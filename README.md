@@ -1,6 +1,6 @@
 
 <div align="center">
-<a href="#top">
+<div id="top">
 
 # <p>30 Days of C++ Challenge
 </p>
@@ -49,6 +49,7 @@
 | [![Day21](imgs/22.jpg)](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day21)| [![Day22](imgs/23.jpg)](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day22) | 
 | [![Day23](imgs/24.jpg)](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day23)| [![Day24](imgs/25.jpg)](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day24) | 
 | [![Day25](imgs/26.jpg)](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day25)| [![Day26](imgs/27.jpg)](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day26) | 
+| [![Day27](imgs/28.jpg)](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day27)| [![Day28](imgs/29.jpg)](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day28) | 
 
 
 
@@ -168,7 +169,6 @@ We are committed to fostering a welcoming and inclusive environment for everyone
     </a>
 </div>
 
-<center>
+
 <h3 style="font-size:2rem;">
 If you find this project helpful, please consider giving it a star! <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/tarikul-islam-anik/main/assets/images/Star.png" width="30" height="30"></p>
-</center>

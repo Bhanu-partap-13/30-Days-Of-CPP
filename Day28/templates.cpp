@@ -32,7 +32,7 @@ public:
 
 /*
 Example 1: Function Template for Finding the Maximum of Two Values
-
+*/
 #include <iostream>
 using namespace std;
 
@@ -47,7 +47,7 @@ int main() {
     cout << "Max('a', 'z'): " << findMax('a', 'z') << endl;
 
     return 0;
-}*/
+}
 /*
 Output:
 Max(10, 20): 20
@@ -57,7 +57,7 @@ Max('a', 'z'): z
 
 /*
 Example 2: Class Template for a Box
-
+*/
 #include <iostream>
 using namespace std;
 
@@ -80,7 +80,7 @@ int main() {
     strBox.display();
 
     return 0;
-}*/
+}
 /*
 Output:
 Data: 42
