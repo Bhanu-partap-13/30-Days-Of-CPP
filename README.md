@@ -52,7 +52,7 @@
 | [![Day27](imgs/28.jpg)](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day27)| [![Day28](imgs/29.jpg)](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day28) | 
 | [![Day29](imgs/30.jpg)](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day29)| [![Day30](imgs/31.jpg)](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day30) | 
 
-
+</div>
 
 ## Requirements
 Make sure you have the following installed to follow along with the challenge:
@@ -69,30 +69,31 @@ This challenge will help you improve your C++ skills through daily practice.A ne
 1. **Fork the Repository**: Click the "Fork" button at the top right of this page to create a copy of this repository on your GitHub account.
 2. **Clone the Repository**: Clone the forked repository to your local machine using `git clone`.
 3. **Start Coding**: Follow the daily challenges and commit your solutions.
-4. **Share Your Progress**: Feel free to share your progress on social media using the hashtag #45DaysOfCPP.
+4. **Share Your Progress**: Feel free to share your progress on social media using the hashtag #30DaysOfCPP.
 
-### How You Can Bring this to VS Code
->[!Note]
->1. Fork the Repostiory && Make a folder with any name.
->2. Open that folder in VS Code.
->3. Open the Terminal and then git Clone.
->4. Make sure you Star and Fork the Repository.
+    ## How You Can Bring this to VS Code
+### Note
+1. Fork the Repostiory && Make a folder with any name.
+2. Open that folder in VS Code.
+3. Open the Terminal and then git Clone.
+4. Make sure you Star and Fork the Repository.
 
 ```bash
 git clone https://github.com/your-username/30-Days-Of-CPP.git
 ```
->[!Tip]
->1. If you want to Create a Issue, You can go on Issues -> New Issues -> Write Title & valid Description.
->2. Work on Issue that I have created for you.
 
-```bash
+### Tip
+1. If you want to Create a Issue, You can go on Issues -> New Issues -> Write Title & valid Description.
+2. Work on Issue that I have created for you.
+
+```bash 
 git checkout -b branch-name
 ```
 ```bash
 git checkout  branch-name
 ```
->[!Warning]
->1. Make changes when you add your new branch and move to new branch.
+### Warning
+1. Make changes when you add your new branch and move to new branch.
 
 ```bash
 git add .
@@ -104,9 +105,9 @@ git commit -m "your changes"
 git push origin branch-name
 ```
 
->[!Note]
->1. Go to your Github. You will se pull request by you.
->2. Explain your changes and create pull request.
+### Note
+1. Go to your Github. You will se pull request by you.
+2. Explain your changes and create pull request.
 
 ## Support Me
 
