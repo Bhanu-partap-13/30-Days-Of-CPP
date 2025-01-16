@@ -50,6 +50,7 @@
 | [![Day23](imgs/24.jpg)](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day23)| [![Day24](imgs/25.jpg)](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day24) | 
 | [![Day25](imgs/26.jpg)](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day25)| [![Day26](imgs/27.jpg)](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day26) | 
 | [![Day27](imgs/28.jpg)](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day27)| [![Day28](imgs/29.jpg)](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day28) | 
+| [![Day29](imgs/30.jpg)](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day29)| [![Day30](imgs/31.jpg)](https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main/Day30) | 
 
 
 
