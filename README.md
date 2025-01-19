@@ -33,6 +33,9 @@
 
 ## Table of Contents
 
+<a href="https://github.com/Bhanu-partap-13/45-Days-Of-C-/">
+  <img src="imgs/1.jpg" alt="Day01" width="400px">
+</a>
 
 |     Let's      |  Get Started           |
 |----------------|-------------------------------|
