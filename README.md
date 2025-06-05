@@ -177,3 +177,4 @@ We are committed to fostering a welcoming and inclusive environment for everyone
 
 <h3 style="font-size:2rem;">
 If you find this project helpful, please consider giving it a star! <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/tarikul-islam-anik/main/assets/images/Star.png" width="30" height="30"></p>
+

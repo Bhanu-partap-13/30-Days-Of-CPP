@@ -1,0 +1,195 @@
+{
+  "Day01": [
+    "streams.cpp",
+    "header.cpp",
+    "operators.cpp",
+    "datatypes.cpp",
+    "README.md"
+  ],
+  "Day02": [
+    "readme.md",
+    "conditions.cpp",
+    "loops.cpp",
+    "classes.cpp"
+  ],
+  "Day03": [
+    "structure.cpp",
+    "readme.md",
+    "Union.cpp",
+    "Enumeration.cpp"
+  ],
+  "Day04": [
+    "static.cpp",
+    "readme.md",
+    "inlinefn.cpp"
+  ],
+  "Day05": [
+    "readme.md",
+    "manipulator.cpp",
+    "default.cpp"
+  ],
+  "Day06": [
+    "scoperules.cpp",
+    "readme.md",
+    "friendfn.cpp",
+    "fnOverloading.cpp"
+  ],
+  "Day07": [
+    "readme.md",
+    "pointer.cpp",
+    "function.cpp",
+    "Recursion.cpp"
+  ],
+  "Day08": [
+    "voidpointer.cpp",
+    "pointertopointer.cpp",
+    "readme.md",
+    "arithmetic.cpp"
+  ],
+  "Day09": [
+    "thispointer.cpp",
+    "readme.md",
+    "pointertypes.cpp",
+    "pointertoobject.cpp",
+    "classpointer.cpp"
+  ],
+  "Day10": [
+    "readme.md",
+    "ArrayOfObjects.cpp",
+    "2DArray.cpp",
+    "1DArray.cpp"
+  ],
+  "Day11": [
+    "readme.md",
+    "modifiers.cpp",
+    "memeberfn.cpp"
+  ],
+  "Day12": [
+    "readme.md",
+    "deconstructor.exe",
+    "deconstructor.cpp",
+    "constructor.exe",
+    "constructor.cpp"
+  ],
+  "Day13": [
+    "initializerlist.cpp",
+    "Parametrized.cpp",
+    "copy.cpp",
+    "readme.md"
+  ],
+  "Day14": [
+    "data.txt",
+    "randomaccess.cpp",
+    "randomaccess.exe",
+    "sequentialaccess.exe",
+    "sequentialaccess.cpp",
+    "fileHandling.cpp",
+    "example.txt",
+    "fileHandling.exe",
+    "readme.md"
+  ],
+  "Day15": [
+    "readme.md",
+    "unaryoperator.cpp",
+    "operatoroverloading.cpp",
+    "operatoroverloading.exe"
+  ],
+  "Day16": [
+    "readme.md",
+    "binaryop.cpp",
+    "binaryop.exe",
+    "unaryop.cpp",
+    "unaryop.exe"
+  ],
+  "Day17": [
+    "readme.md",
+    "typeconversion.cpp",
+    "typeconversion.exe"
+  ],
+  "Day18": [
+    "classtoclass.exe",
+    "readme.md",
+    "classtoclass.cpp",
+    "basictoclass.cpp",
+    "basictoclass.exe",
+    "classtobasic.exe",
+    "classtobasic.cpp"
+  ],
+  "Day19": [
+    "readme.md",
+    "inheritance.cpp",
+    "inheritance.exe"
+  ],
+  "Day20": [
+    "readme.md",
+    "typesofinheritance.cpp",
+    "typesofinheritance.exe"
+  ],
+  "Day21": [
+    "readme.md",
+    "virtual.cpp",
+    "virtual.exe",
+    "ambiguity.cpp",
+    "ambiguity.exe"
+  ],
+  "Day22": [
+    "readme.md",
+    "dma.cpp",
+    "dma.exe"
+  ],
+  "Day23": [
+    "readme.md",
+    "virtualDestructor.cpp",
+    "virtualDestructor.exe",
+    "memoryleak.cpp",
+    "memoryleak.exe"
+  ],
+  "Day24": [
+    "readme.md",
+    "purevirtual.cpp",
+    "purevirtual.exe",
+    "virtualfn.cpp",
+    "virtualfn.exe",
+    "polymorphism.cpp"
+  ],
+  "Day25": [
+    "readme.md",
+    "refrentialclass.cpp",
+    "refrentialclass.exe",
+    "concreteclass.cpp",
+    "concreteclass.exe",
+    "abstractclass.cpp",
+    "abstractclass.exe"
+  ],
+  "Day26": [
+    "readme.md",
+    "latebinding.exe",
+    "latebinding.cpp",
+    "earlybinding.cpp",
+    "earlybinding.exe"
+  ],
+  "Day27": [
+    "readme.md",
+    "exceptionhandling.exe",
+    "exceptionhandling.cpp"
+  ],
+  "Day28": [
+    "templates.cpp",
+    "readme.md",
+    "templates.exe",
+    "rethrowing.cpp",
+    "rethrowing.exe"
+  ],
+  "Day29": [
+    "readme.md",
+    "STLbasics.exe",
+    "STLbasics.cpp",
+    "templateinheritance.cpp",
+    "templateinheritance.exe"
+  ],
+  "Day30": [
+    "readme.md",
+    "stl.cpp",
+    "stl.exe"
+  ]
+} 

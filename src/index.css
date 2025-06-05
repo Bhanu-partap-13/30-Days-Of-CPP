@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom animation for gradient background */
+@keyframes gradientBG {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+body {
+  min-height: 100vh;
+  animation: gradientBG 10s ease infinite;
+  background-size: 200% 200%;
+}
