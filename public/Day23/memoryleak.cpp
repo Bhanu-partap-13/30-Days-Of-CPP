@@ -1,5 +1,5 @@
 //------------------------------------------------------Memory Leaks in Dynamic Memory Allocation------------------------------------------------
-
+// 30 Days of C++ - By bhanu partap - learn more about me at https://github.com/Bhanu-partap-13
 /*
 - A 'memory leak' occurs when a program allocates memory using `new` (or similar functions) but fails to deallocate it - using `delete`.
 - Over time, memory leaks can cause the program to consume increasing amounts of memory, leading to system slowdown or crashes.

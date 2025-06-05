@@ -1,7 +1,7 @@
 //----------------------------------------------------------------------Array Of Objects-----------------------------------------------------------------------------------------
 
 // Array of Objects is an array in which each element is an object of a class.
-
+// 30 Days of C++ - By bhanu partap - learn more about me at https://github.com/Bhanu-partap-13
 /*
 Syntax for declaring an array of objects:
 ClassName object_name[size];

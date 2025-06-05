@@ -1,5 +1,5 @@
 //-----------------------------------------------------------Exception Handling-------------------------------------------------------------------
-
+// 30 Days of C++ - By bhanu partap - learn more about me at https://github.com/Bhanu-partap-13
 /*
 - `Exception handling` is a mechanism to handle runtime errors in a program, ensuring the program runs smoothly without crashing.
 - It separates error-handling code from regular code.

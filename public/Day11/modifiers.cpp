@@ -1,5 +1,5 @@
 //------------------------------------------------------Modifiers of String Class-----------------------------------------------------
-
+// 30 Days of C++ - By bhanu partap - learn more about me at https://github.com/Bhanu-partap-13
 /*
 What are Modifiers? Modifiers are functions that change the value or content of a string. 
 */

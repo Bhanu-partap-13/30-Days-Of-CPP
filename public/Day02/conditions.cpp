@@ -11,7 +11,7 @@ C++ usually use logical conditions to perform different actions based on differe
 8. Logical OR (||)
 9. Logical NOT (!)
 */
-
+// 30 Days of C++ - By bhanu partap - learn more about me at https://github.com/Bhanu-partap-13
 /*
 Use 'if' statement to execute a block of code if a specified condition is true.
 Syntax:

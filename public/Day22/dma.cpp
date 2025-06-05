@@ -1,5 +1,5 @@
 // -----------------------------------------------------DMA stands for Dynamic Memory Allocation------------------------------------
-
+// 30 Days of C++ - By bhanu partap - learn more about me at https://github.com/Bhanu-partap-13
 //There are times where the data has to be entered and is allocated at the time of execution.
 // For example, a list of employees increases as the new employees are hired in the organization and similarly reduces when a person leaves the organization. 
 //This is called managing the memory. 

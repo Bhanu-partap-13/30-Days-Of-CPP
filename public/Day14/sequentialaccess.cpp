@@ -1,5 +1,5 @@
 //---------------------------------------------------------Sequential Access---------------------------------------------------------------
-
+// 30 Days of C++ - By bhanu partap - learn more about me at https://github.com/Bhanu-partap-13
 //What is Sequential Access? 
 /*
 Data is read or written in a linear order, from the beginning of the file to the end.

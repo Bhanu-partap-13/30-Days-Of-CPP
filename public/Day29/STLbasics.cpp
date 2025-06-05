@@ -1,5 +1,5 @@
 //-------------------------------------------------------------Basics of the STL in C++-----------------------------------------------------------
-
+// 30 Days of C++ - By bhanu partap - learn more about me at https://github.com/Bhanu-partap-13
 /*
 - The Standard Template Library (STL) is a powerful feature of C++ that provides a set of template classes and functions.
 - It simplifies complex operations like searching, sorting, and managing data structures.

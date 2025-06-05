@@ -1,5 +1,5 @@
 //-------------------------------------------------------Member Function-------------------------------------------------------------------
-
+// 30 Days of C++ - By bhanu partap - learn more about me at https://github.com/Bhanu-partap-13
 //What are member functions? 
 //Member functions are like special tools inside a class that help you do things with the class's data.
 //For example:  Think of a class as a blueprint for an object (like a car), and member functions are the actions the car can perform (like start, stop, or honk).

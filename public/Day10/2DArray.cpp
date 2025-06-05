@@ -5,7 +5,7 @@
 
 //What is a 3D array? Three Dimensional Arrays are like a cube, which has rows, columns, and depth. We can store information in rows, columns, and depth.
 //For example, if we want to store the marks of 50 students in 5 subjects in 3 terms, we can create a 3D array of size 50x5x3.
-
+// 30 Days of C++ - By bhanu partap - learn more about me at https://github.com/Bhanu-partap-13
 //Syntax for declaring a 2D array:
 // data_type array_name[row_size][column_size];
 

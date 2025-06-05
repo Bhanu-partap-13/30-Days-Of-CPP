@@ -1,5 +1,5 @@
 //------------------------------------------------------------Initializer List----------------------------------------------------------    
-
+// 30 Days of C++ - By bhanu partap - learn more about me at https://github.com/Bhanu-partap-13
 //Initializer List is used in initializing the data members of a class.
 // The list of members to be initialized is indicated with constructor as a comma-separated list followed by a colon. 
 

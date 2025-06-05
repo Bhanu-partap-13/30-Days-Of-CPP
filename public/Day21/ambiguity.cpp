@@ -1,5 +1,5 @@
 //----------------------------------------------------Solving Ambiguity in Inheritance-----------------------------------------------------------
-
+// 30 Days of C++ - By bhanu partap - learn more about me at https://github.com/Bhanu-partap-13
 /*
 - Ambiguity in inheritance arises when two base classes have functions with the same name, and a derived class inherits from both base classes. The compiler cannot determine which base class function to invoke, leading to ambiguity.
 - C++ provides methods to solve this ambiguity:

@@ -7,7 +7,7 @@
 */
 
 //----------------------------------------------------------Syntax-------------------------------------------------------------------------------
-/*
+/*// 30 Days of C++ - By bhanu partap - learn more about me at https://github.com/Bhanu-partap-13
 try {
     // Code that may throw an exception
     throw exception; // Throw an exception

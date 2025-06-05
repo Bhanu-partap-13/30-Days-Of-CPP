@@ -11,7 +11,7 @@ for(initialization; condition; increment/decrement){
     //block of code
 }
 */
-
+// 30 Days of C++ - By bhanu partap - learn more about me at https://github.com/Bhanu-partap-13
 /*
 Use 'while' loop when you want to execute a block of code as long as a condition is true.
 Syntax:

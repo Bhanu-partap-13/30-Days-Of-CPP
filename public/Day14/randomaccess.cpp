@@ -1,5 +1,5 @@
 //----------------------------------------------------Random Access--------------------------------------------------------------
-
+// 30 Days of C++ - By bhanu partap - learn more about me at https://github.com/Bhanu-partap-13
 //What is Random Access?
 /* 
 Data can be accessed at any position in the file without reading the preceding data.

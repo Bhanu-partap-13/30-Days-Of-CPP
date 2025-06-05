@@ -1,5 +1,5 @@
 //-------------------------------------------------Parametrized constructor--------------------------------------------------------------------
-
+// 30 Days of C++ - By bhanu partap - learn more about me at https://github.com/Bhanu-partap-13
 //What are parametrize Constructor
 /*
 1. Parametrize Constructor is a constructor which takes parameters.

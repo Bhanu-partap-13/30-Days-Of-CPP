@@ -1,5 +1,5 @@
 //-------------------------------------------------------------------------Pointer Arithmetic-----------------------------------------------------
-
+// 30 Days of C++ - By bhanu partap - learn more about me at https://github.com/Bhanu-partap-13
 // Pointer arithmetic is the process of adding or subtracting an integer value to a pointer in order to access memory locations.
 // The integer value is always multiplied by the size of the data type to which the pointer points.
 

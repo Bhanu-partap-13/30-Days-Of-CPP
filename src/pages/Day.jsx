@@ -219,6 +219,7 @@ const Day = () => {
                   onClick={() => handleCopyRunCommand(files[selectedFileIdx])}
                   className={`w-full flex items-center justify-center gap-2 px-4 py-2 rounded bg-blue-500 dark:bg-blue-600 text-white font-semibold hover:bg-blue-600 dark:hover:bg-blue-800 transition ${copied ? 'opacity-70' : ''}`}
                 >
+                  {/* 30 Days of C++ - By bhanu partap - learn more about me at https://github.com/Bhanu-partap-13*/}
                   {copied ? 'Copied!' : 'Copy Run Command'}
                 </button>
               )}
@@ -255,3 +256,5 @@ const Day = () => {
 };
 
 export default Day;
+
+// 30 Days of C++ - By bhanu partap - learn more about me at https://github.com/Bhanu-partap-13

@@ -1,5 +1,5 @@
 // ----------------------------------------------------------Inheritance in C++-------------------------------------------------------------------
-
+// 30 Days of C++ - By bhanu partap - learn more about me at https://github.com/Bhanu-partap-139
 //In C++, We can inherit the  attributes and the methods from one class to another.
 // WE group 'Inheritance Concept' into two categories:
 

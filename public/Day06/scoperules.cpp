@@ -1,5 +1,5 @@
 //Scope is a region of the program where a defined variable can have its existence and beyond that variable it cannot be accessed. 
-
+// 30 Days of C++ - By bhanu partap - learn more about me at https://github.com/Bhanu-partap-13
 //There are three places where variables can be declared in C++:
 //1. Inside a function or a block which is called local variables.
 //2. In the definition of function parameters which are called formal parameters.

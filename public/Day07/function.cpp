@@ -1,5 +1,5 @@
 //-------------------------------------------------------------------------Function In C++-------------------------------------------------------------------------
-
+// 30 Days of C++ - By bhanu partap - learn more about me at https://github.com/Bhanu-partap-13
 /*
 A function is defined as a group of statements that together perform a task. 
 Every C++ program has at least one function, which is main(), and all the most trivial programs can define additional functions.

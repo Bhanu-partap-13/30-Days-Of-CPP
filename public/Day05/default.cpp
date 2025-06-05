@@ -5,7 +5,7 @@
 In a function, if we don't pass the value of an argument then the default value of that argument is used.
 A default argument is a value provided in a function declaration that is automatically assigned by the compiler if the caller of the function doesn't provide a value for the argument with a default value.
 */
-
+// 30 Days of C++ - By bhanu partap - learn more about me at https://github.com/Bhanu-partap-13
 //Characterstics of Defining Default Argument:
 /*
 1. Default arguments must be at the end of the argument list.

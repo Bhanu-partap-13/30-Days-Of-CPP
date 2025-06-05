@@ -1,5 +1,5 @@
 //--------------------------------------------------------------------Friend Function & Class------------------------------------------------------------
-
+// 30 Days of C++ - By bhanu partap - learn more about me at https://github.com/Bhanu-partap-13
 // Data Hiding is a fundamental concept of Object-Oriented Programming. It is the ability of an object to hide its data from the outside world.
 //Similarly, Protected Members are accessible within the class and its derived classes. They are not accessible outside the class.
 

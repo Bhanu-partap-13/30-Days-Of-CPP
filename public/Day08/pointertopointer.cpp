@@ -1,5 +1,5 @@
 //--------------------------------------------------------------------Pointer to Pointer------------------------------------------------------------
-
+// 30 Days of C++ - By bhanu partap - learn more about me at https://github.com/Bhanu-partap-13
 // A pointer to a pointer is a form of multiple indirection or a chain of pointers.
 // Normally, a pointer contains the address of a variable. 
 

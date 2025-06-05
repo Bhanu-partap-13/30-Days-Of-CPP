@@ -5,7 +5,7 @@
 // 4. The size of an array must be a constant value.
 // 5. The size of an array must be specified at the time of declaration.
 // 6. The size of an array cannot be changed once it is declared.
-
+// 30 Days of C++ - By bhanu partap - learn more about me at https://github.com/Bhanu-partap-13
 //What is a 1D array? One Dimensional Arrays are like a row of boxes, each box has a number on it and we can store information in each box.
 //For example, if we want to store the marks of 50 students, we can create an array of size 50.
 

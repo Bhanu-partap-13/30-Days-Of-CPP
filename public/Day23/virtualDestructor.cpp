@@ -1,5 +1,5 @@
 //------------------------------------------------------------Virtual Destructor--------------------------------------------------------------------
-
+// 30 Days of C++ - By bhanu partap - learn more about me at https://github.com/Bhanu-partap-13
 /*
 - A 'virtual destructor' ensures proper cleanup of resources in a class hierarchy when dealing with polymorphism.
 - If a base class pointer points to a derived class object and the base class destructor is not virtual, only the base class destructor will be called during object destruction.

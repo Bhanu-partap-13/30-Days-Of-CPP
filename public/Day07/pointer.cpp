@@ -1,5 +1,5 @@
 //---------------------------------------------------------------------------Pointers--------------------------------------------------------------------------------------------
-
+// 30 Days of C++ - By bhanu partap - learn more about me at https://github.com/Bhanu-partap-13
 // Pointers are variables that store the memory address of another variable. They are used to store the address of a variable.
 
 /*

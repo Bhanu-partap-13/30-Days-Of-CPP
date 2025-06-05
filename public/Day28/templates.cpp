@@ -1,5 +1,5 @@
 //-------------------------------------------------------------Templates in C++-----------------------------------------------------------------
-
+// 30 Days of C++ - By bhanu partap - learn more about me at https://github.com/Bhanu-partap-13
 /*
 - Templates in C++ allow writing generic and reusable code by enabling functions and classes to operate with any data type.
 - Templates reduce code duplication and make it easier to handle multiple types with the same logic.

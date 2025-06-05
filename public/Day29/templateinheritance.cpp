@@ -1,5 +1,5 @@
 //-------------------------------------------------------------Templates in Inheritance in C++-------------------------------------------------
-
+// 30 Days of C++ - By bhanu partap - learn more about me at https://github.com/Bhanu-partap-13
 /*
 - Templates in inheritance allow the creation of base and derived classes that are generic.
 - A base class can be a template, a derived class can be a template, or both can be templates.

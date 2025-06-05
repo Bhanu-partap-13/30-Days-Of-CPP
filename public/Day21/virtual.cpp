@@ -1,5 +1,5 @@
 //---------------------------------------------------------Virutal Class------------------------------------------------------------------------
-
+// 30 Days of C++ - By bhanu partap - learn more about me at https://github.com/Bhanu-partap-13
 /*
 - Virtual classes are used in C++ to prevent multiple "instances" of a base class appearing in the inheritance hierarchy when using multiple inheritance.
 - This prevents ambiguity and redundancy when a derived class inherits from multiple base classes that share a common base class.

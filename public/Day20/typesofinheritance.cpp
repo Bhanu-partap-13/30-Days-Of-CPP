@@ -1,5 +1,5 @@
 //----------------------------------------------------Types Of Inheritance-----------------------------------------------------------
-
+// 30 Days of C++ - By bhanu partap - learn more about me at https://github.com/Bhanu-partap-13
 /*
 - The inheritance can be classified on the basis of the relationship between the derived class and the base class. 
 - In C++, we have 5 types of inheritances:

@@ -19,6 +19,7 @@ const Navbar = () => {
           <div className="flex items-center">
             {/* Optional: Add other nav links here if needed later, e.g., About, Blog */}
             {/* <Link to="/about" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</Link> */}
+            {/* 30 Days of C++ - By bhanu partap - learn more about me at https://github.com/Bhanu-partap-13*/}
             <a
               href="https://github.com/Bhanu-partap-13/45-Days-Of-C-/tree/main" // Update with your actual repo link
               target="_blank"
@@ -45,3 +46,5 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+// 30 Days of C++ - By bhanu partap - learn more about me at https://github.com/Bhanu-partap-13

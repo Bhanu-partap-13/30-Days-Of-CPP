@@ -2,7 +2,7 @@
 //A constructor is a special member function of a class and shares the same name as of class, which means the constructor and class have the same name.
 // Constructor is called by the compiler whenever the object of the class is created
 // It can be defined manually with arguments or without arguments. 
-
+// 30 Days of C++ - By bhanu partap - learn more about me at https://github.com/Bhanu-partap-13
 /*
 Syntax:
 ClassName() 

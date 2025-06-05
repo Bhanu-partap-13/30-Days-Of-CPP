@@ -1,5 +1,5 @@
 //-----------------------------------------------------------STL - Algorithm, Vector, and Iterator------------------------------------------------------------
-
+// 30 Days of C++ - By bhanu partap - learn more about me at https://github.com/Bhanu-partap-13
 /*
 - The Standard Template Library (STL) is a vital part of C++ programming.
 - It offers a collection of classes and functions that provide general-purpose, reusable solutions for tasks like sorting, searching, and handling data structures.

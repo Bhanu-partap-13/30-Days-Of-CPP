@@ -7,7 +7,7 @@ A function is a block of code that performs a specific task.
  2. In C++, functions are defined outside the class. 
  3.  Functions can be defined inside the class and outside
 */
-
+// 30 Days of C++ - By bhanu partap - learn more about me at https://github.com/Bhanu-partap-13
 //Inline Function:- Inline function is a function that is expanded in line when it is called. 
 /*When the inline function is called whole code of the inline function gets inserted or substituted at the point of inline function call. 
 This substitution is performed by the C++ compiler at compile time. */

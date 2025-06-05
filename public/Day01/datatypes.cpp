@@ -11,7 +11,7 @@ using namespace std;
 int main() {
 cout << "Size of char : " << sizeof(char) << endl;
 cout << "Size of int : " << sizeof(int) << endl;
-cout << "Size of long : " << sizeof(Long) << endl;
+cout << "Size of long : " << sizeof(long) << endl;
 cout << "Size of float : " << sizeof(float) << endl;
 cout << "Size of double : " << sizeof(double) << endl;
 return 0;
@@ -42,3 +42,4 @@ cout << "unsigned char : " << sizeof(unsigned char) << endl;
 return 0;
 }
 //Run the code on your compiler and check the output
+// 30 Days of C++ - By bhanu partap - learn more about me at https://github.com/Bhanu-partap-13

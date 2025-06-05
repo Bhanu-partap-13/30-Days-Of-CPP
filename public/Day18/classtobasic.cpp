@@ -1,5 +1,5 @@
 //--------------------------------------------------Class to Basic--------------------------------------------------
-
+// 30 Days of C++ - By bhanu partap - learn more about me at https://github.com/Bhanu-partap-13
 // In this type of conversion we convert a class object(source) to a basic data type(destination).
 // This is done by defining a conversion function in the class. The conversion function must be a member function of the class. 
 //For example, we have a class named Distance that has two data members feet and inches. We can convert this class object to an integer by defining a conversion function in the class.

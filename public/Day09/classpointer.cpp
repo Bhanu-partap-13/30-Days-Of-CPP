@@ -1,5 +1,5 @@
 //-----------------------------------------------------------------Class containing pointers------------------------------------------------------------
-
+// 30 Days of C++ - By bhanu partap - learn more about me at https://github.com/Bhanu-partap-13
 /*
 A class can contain pointers as its members.
 

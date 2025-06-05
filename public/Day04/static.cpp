@@ -2,7 +2,7 @@
 
 //static member function is a function that belongs to the class rather than the object of a class.
 // It does not have access to 'this' pointer. It can only access static data members and static member functions.
-
+// 30 Days of C++ - By bhanu partap - learn more about me at https://github.com/Bhanu-partap-13
 /*
 Syntax:
 class class_name

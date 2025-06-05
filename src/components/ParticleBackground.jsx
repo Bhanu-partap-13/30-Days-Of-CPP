@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useState, useCallback } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadLinksPreset } from "@tsparticles/preset-links";
-
+// 30 Days of C++ - By bhanu partap - learn more about me at https://github.com/Bhanu-partap-13
 const ParticleBackground = () => {
   const [init, setInit] = useState(false);
 
@@ -12,7 +12,7 @@ const ParticleBackground = () => {
       setInit(true);
     });
   }, []);
-
+// 30 Days of C++ - By bhanu partap - learn more about me at https://github.com/Bhanu-partap-13
   const options = useMemo(
     () => ({
       preset: "links",
@@ -74,3 +74,4 @@ const ParticleBackground = () => {
 };
 
 export default ParticleBackground; 
+// 30 Days of C++ - By bhanu partap - learn more about me at https://github.com/Bhanu-partap-13

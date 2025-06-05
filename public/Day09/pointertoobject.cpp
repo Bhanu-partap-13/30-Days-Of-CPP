@@ -1,5 +1,5 @@
 //-----------------------------------------------------------------------------Pointers to objects-----------------------------------------------------------------------------
-
+// 30 Days of C++ - By bhanu partap - learn more about me at https://github.com/Bhanu-partap-13
 /*
 we can also create pointers to objects of a class. 
 This is particularly useful when we want to pass an object to a function by reference, or when we don't want to pass a large object to a function, but we want to avoid copying it.

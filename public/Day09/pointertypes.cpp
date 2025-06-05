@@ -1,6 +1,6 @@
 //----------------------------------------------------------------------------Types of the Pointer----------------------------------------------------------------------------
 
-
+// 30 Days of C++ - By bhanu partap - learn more about me at https://github.com/Bhanu-partap-13
 /*
 How to use a pointer?
 1. Declare a pointer

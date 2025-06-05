@@ -6,7 +6,7 @@ You can define a union with many members, but only one member can contain a valu
  Unions provide an efficient way of using the same memory location for multiple-purpose.
 */
 
-
+// 30 Days of C++ - By bhanu partap - learn more about me at https://github.com/Bhanu-partap-13
 //MAIN Difference between Structure and Union 
 // In structure, each member has its own memory location, whereas, in union, all members share the same memory location.
 // In structure, the size of the structure is the sum of the size of all its members, whereas, in union, the size of the union is the size of the largest member.

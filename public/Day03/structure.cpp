@@ -4,7 +4,7 @@ The Structure is a user defined data type in C++ which allows you to combine dif
 Structure helps to construct a complex data type which is more meaningful.
 Structure is used to represent a record.
 Structure is a collection of variables of different data types under a single name.*/
-
+// 30 Days of C++ - By bhanu partap - learn more about me at https://github.com/Bhanu-partap-13
 
 /*
                                               Syntax:

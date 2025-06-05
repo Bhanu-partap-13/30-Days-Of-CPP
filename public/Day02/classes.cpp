@@ -13,7 +13,7 @@ Object - Instance of the class.
 1. When a class is defined no memory is allocated but when an object is created memory is allocated.
 2. Consider class as a blueprint and object as the building made from the blueprint.
 */
-
+// 30 Days of C++ - By bhanu partap - learn more about me at https://github.com/Bhanu-partap-13
 //-----------------------------------------------------Defining class and declaring object-----------------------------------------------------
 
 class ClassName{ //class is a keyword & ClassName is the user-defined name of the class

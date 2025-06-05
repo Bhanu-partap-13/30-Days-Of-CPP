@@ -1,5 +1,5 @@
 //-----------------------------------------------------------Pure Virtual Function-----------------------------------------------------------------
-
+// 30 Days of C++ - By bhanu partap - learn more about me at https://github.com/Bhanu-partap-13
 /*
 - A 'pure virtual function' in C++ is a virtual function declared in a base class that must be overridden in all derived classes.
 - It is specified by assigning `= 0` to the virtual function declaration.

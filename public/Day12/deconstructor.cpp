@@ -3,7 +3,7 @@
 // (~) operator is called tilde operator.
 //In a class, there is always a single destructor without any parameters so it can’t be overloaded.
 // It is always called in the reverse order of the constructor.
-
+// 30 Days of C++ - By bhanu partap - learn more about me at https://github.com/Bhanu-partap-13
 /*
 Syntax :
 ~ClassName()

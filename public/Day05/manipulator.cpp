@@ -5,7 +5,7 @@
 Argumented Manipulators - These manipulators take arguments and return a new stream. For example, setw(), setprecision(), etc.
 Non-Argumented Manipulators - These manipulators do not take arguments and return a new stream. For example, endl, ends, etc.
 */
-
+// 30 Days of C++ - By bhanu partap - learn more about me at https://github.com/Bhanu-partap-13
 //Example Code
 
 #include <iostream>

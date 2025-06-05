@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-
+// 30 Days of C++ - By bhanu partap - learn more about me at https://github.com/Bhanu-partap-13
 const DayCard = ({ day }) => (
   <motion.div
     whileHover={{ scale: 1.05, boxShadow: "0 8px 32px rgba(100,0,200,0.2)" }}
@@ -21,3 +21,4 @@ const DayCard = ({ day }) => (
 );
 
 export default DayCard;
+

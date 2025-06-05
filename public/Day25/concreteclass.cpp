@@ -1,11 +1,11 @@
 //------------------------------------------------------------Concrete Class in C++-------------------------------------------------------------
-
+// 30 Days of C++ - By bhanu partap - learn more about me at https://github.com/Bhanu-partap-13
 /*
 - A `concrete class` in C++ is a class that provides implementations for all its functions, including any inherited pure virtual functions.
 - Concrete classes can be instantiated to create objects and are the final usable classes in an inheritance hierarchy.
 - They are the opposite of abstract classes.
 */
-
+// 30 Days of C++ - By bhanu partap - learn more about me at https://github.com/Bhanu-partap-13
 //-------------------------------------------------------------Syntax of Concrete Class----------------------------------------------------------
 /*
 class ConcreteClass {
