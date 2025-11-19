@@ -71,7 +71,7 @@ int main()
 
 /*
 In the above code, we have created an integer array marks of size 5 dynamically using DMA.
-We have initialized the array with values 0, 10, 20, 30, 40.
+We have printed the array with values 0, 10, 20, 30, 40.
 We have printed the elements of the array using a for loop.
 Finally, we have deleted the array using delete[] marks.
 */
