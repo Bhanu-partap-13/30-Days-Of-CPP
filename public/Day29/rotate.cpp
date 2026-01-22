@@ -1,4 +1,4 @@
-//how to raote the array
+//how to rotate the array
 #include<iostream>
 #include<vector>
 using namespace std;
