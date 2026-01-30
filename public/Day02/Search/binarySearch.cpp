@@ -1,37 +1,40 @@
 // we will do binary search where we are having a key value to search in a sorted array
 
-#include<iostream>
+#include<bits/stdc++.h>
 using namespace std;
 
 int main() {
-    int arr[] = {1,2,3,4,5,6,7,8,9,10};
-    int n = sizeof(arr)/sizeof(arr[0]);
+    int n;
+    cin>>n;
+    vector<int> arr(n);
+    
+    for(int i=0;i<n;i++){
+        cin>>arr[i];
+    }
     int key;
     cin>>key;
-
-    int l=0;
-    int h=n-1;
+    
+    int low=0;
+    int high = n-1;
     bool found = false;
-
-    while(l<=h){
-        int mid = l+(h-l)/2;
-
-        if(arr[mid]==key){
+    
+    while(low<=high){
+        int mid = low + (high-low)/2;
+        if(arr[mid] == key) {
             found = true;
-            cout<<"Element found at index "<<mid<<endl;
+            cout<<"Element Found Successfully at "<<mid<<endl;
             break;
         }
-        else if(arr[mid]<key){
-            l=mid+1;
+        else if(arr[mid] < key){
+            low=mid+1;
         }
         else{
-            h=mid-1;
+            high=mid-1;
         }
     }
-
-    if(!found){
-        cout<<"Element not found"<<endl;
+    if (!found){
+        cout<<"Element not found";
     }
-
+    
     return 0;
 }
