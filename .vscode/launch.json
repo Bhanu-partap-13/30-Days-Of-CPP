@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/45DaysofCPP/public/Day29",
-      "program": "c:/45DaysofCPP/public/Day29/build/Debug/outDebug",
+      "cwd": "c:/45DaysofCPP/public/Topics/Sort",
+      "program": "c:/45DaysofCPP/public/Topics/Sort/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
