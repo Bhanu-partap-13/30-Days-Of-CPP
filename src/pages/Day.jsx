@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { atomDark } from "react-syntax-highlighter/dist/esm/styles/prism";
-import { prism as prismLight } from "react-syntax-highlighter/dist/esm/styles/prism";
 import { FaFileCode, FaFileAlt, FaDownload, FaTerminal, FaRegStickyNote } from "react-icons/fa";
 import daysFiles from "../data/daysFiles.json";
 import Loader from "../components/Loader";
+import CodeBlock from "../components/CodeBlock";
 import { useTheme } from "../contexts/ThemeContext";
 
 const fetchFileContent = async (dayFolder, fileName) => {
@@ -105,36 +103,36 @@ const Day = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col pt-4 pb-8 px-2 md:px-8 text-gray-900 dark:text-white">
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 pt-4 pb-8 px-2 md:px-8">
       {loading && <Loader />}
       <div className="max-w-7xl w-full mx-auto flex flex-col gap-6">
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2 mb-2">
           <div>
             <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-1 text-gray-900 dark:text-white">Day {dayNum}</h1>
-            <p className="text-lg text-blue-600 dark:text-blue-200 font-medium">C++ Challenge - Explore, Learn, Run & Note</p>
+            <p className="text-lg text-gray-600 dark:text-gray-400 font-medium">C++ Challenge - Explore, Learn, Run & Note</p>
           </div>
           <div className="flex gap-2 mt-2 md:mt-0">
             {dayNum > 1 && (
-              <Link to={`/day/${(dayNum - 1).toString().padStart(2, "0")}`} className="px-4 py-2 rounded bg-gray-200 dark:bg-[#232946] text-gray-800 dark:text-white hover:bg-gray-300 dark:hover:bg-blue-800 transition font-semibold shadow">&larr; Prev</Link>
+              <Link to={`/day/${(dayNum - 1).toString().padStart(2, "0")}`} className="px-4 py-2 rounded-lg bg-white dark:bg-gray-800 text-gray-800 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 transition font-medium shadow border border-gray-200 dark:border-gray-700">&larr; Prev</Link>
             )}
             {dayNum < 30 && (
-              <Link to={`/day/${(dayNum + 1).toString().padStart(2, "0")}`} className="px-4 py-2 rounded bg-gray-200 dark:bg-[#232946] text-gray-800 dark:text-white hover:bg-gray-300 dark:hover:bg-blue-800 transition font-semibold shadow">Next &rarr;</Link>
+              <Link to={`/day/${(dayNum + 1).toString().padStart(2, "0")}`} className="px-4 py-2 rounded-lg bg-white dark:bg-gray-800 text-gray-800 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 transition font-medium shadow border border-gray-200 dark:border-gray-700">Next &rarr;</Link>
             )}
-            <Link to="/" className="px-4 py-2 rounded bg-gray-200 dark:bg-[#232946] text-purple-600 dark:text-purple-300 hover:bg-gray-300 dark:hover:bg-purple-700 hover:text-white dark:hover:text-white transition font-semibold shadow">Home</Link>
+            <Link to="/" className="px-4 py-2 rounded-lg bg-blue-500 dark:bg-blue-600 text-white hover:bg-blue-600 dark:hover:bg-blue-700 transition font-medium shadow">Home</Link>
           </div>
         </div>
 
         {/* File Tabs */}
-        <div className="flex gap-2 overflow-x-auto pb-2">
+        <div className="flex gap-2 overflow-x-auto pb-2 custom-scrollbar">
           {files.map((file, idx) => (
             <button
               key={file}
               onClick={() => setSelectedFileIdx(idx)}
-              className={`flex items-center gap-1 px-4 py-2 rounded-t-lg font-semibold transition border-b-2 
+              className={`flex items-center gap-1 px-4 py-2 rounded-lg font-medium transition whitespace-nowrap
                           ${selectedFileIdx === idx 
-                            ? 'bg-white dark:bg-[#232946] text-blue-600 dark:text-blue-300 border-blue-500 dark:border-blue-400' 
-                            : 'bg-gray-100 dark:bg-[#181c2b] text-gray-700 dark:text-gray-300 border-transparent hover:bg-gray-200 dark:hover:bg-[#232946]'}`}
+                            ? 'bg-white dark:bg-gray-800 text-blue-600 dark:text-blue-400 shadow-md border border-blue-200 dark:border-blue-800' 
+                            : 'bg-gray-100 dark:bg-gray-800/50 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-800 border border-transparent'}`}
             >
               {getFileIcon(file)}
               {file}
@@ -145,42 +143,34 @@ const Day = () => {
         {/* Main Content Layout */}
         <div className="flex flex-col lg:flex-row gap-6">
           {/* Main File Content */}
-          <div className="flex-1 bg-white dark:bg-[#232946] rounded-xl shadow-lg p-6 min-h-[400px] max-w-full overflow-x-auto">
+          <div className="flex-1 bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 border border-gray-200 dark:border-gray-700">
             <div className="flex items-center justify-between mb-4">
-              <span className="text-sm text-blue-600 dark:text-blue-200 font-mono">{files[selectedFileIdx] || 'No file selected.'}</span>
+              <span className="text-sm text-blue-600 dark:text-blue-400 font-mono">{files[selectedFileIdx] || 'No file selected.'}</span>
               {files[selectedFileIdx] && (
-                <div className="flex gap-2">
-                  <a
-                    href={`/${dayFolder}/${files[selectedFileIdx]}`}
-                    download
-                    className="p-2 rounded bg-gray-200 dark:bg-[#181c2b] text-blue-600 dark:text-blue-200 hover:bg-gray-300 dark:hover:bg-blue-900 transition"
-                    title="Download file"
-                  >
-                    <FaDownload />
-                  </a>
-                </div>
+                <a
+                  href={`/${dayFolder}/${files[selectedFileIdx]}`}
+                  download
+                  className="p-2 rounded-lg bg-gray-100 dark:bg-gray-700 text-blue-600 dark:text-blue-400 hover:bg-gray-200 dark:hover:bg-gray-600 transition"
+                  title="Download file"
+                >
+                  <FaDownload />
+                </a>
               )}
             </div>
-            <div className="bg-gray-50 dark:bg-[#1a1f33] rounded-lg p-4 overflow-x-auto prose prose-sm sm:prose lg:prose-lg xl:prose-xl dark:prose-invert max-w-none min-h-[300px]">
+            <div className="prose prose-sm sm:prose lg:prose-lg dark:prose-invert max-w-none">
               {error ? (
-                <div className="text-red-500 dark:text-red-400 font-semibold text-center py-8">{error}</div>
+                <div className="text-red-500 dark:text-red-400 font-semibold text-center py-8 bg-red-50 dark:bg-red-900/20 rounded-lg">{error}</div>
               ) : files[selectedFileIdx] ? (
                 getFileType(files[selectedFileIdx]) === "md" ? (
-                  <ReactMarkdown>{fileContent}</ReactMarkdown>
+                  <div className="bg-gray-50 dark:bg-gray-900/50 rounded-lg p-6">
+                    <ReactMarkdown>{fileContent}</ReactMarkdown>
+                  </div>
                 ) : getFileType(files[selectedFileIdx]) === "cpp" ? (
-                  <SyntaxHighlighter 
-                    language="cpp" 
-                    style={theme === 'dark' ? atomDark : prismLight}
-                    showLineNumbers 
-                    wrapLines={true} 
-                    lineProps={{style: {wordBreak: 'break-all', whiteSpace: 'pre-wrap'}}}
-                  >
-                    {String(fileContent)}
-                  </SyntaxHighlighter>
+                  <CodeBlock code={fileContent} language="cpp" fileName={files[selectedFileIdx]} />
                 ) : getFileType(files[selectedFileIdx]) === "txt" ? (
-                  <pre className="whitespace-pre-wrap break-all">{fileContent}</pre>
+                  <pre className="whitespace-pre-wrap break-all bg-gray-50 dark:bg-gray-900/50 p-4 rounded-lg">{fileContent}</pre>
                 ) : (
-                  <pre className="whitespace-pre-wrap break-all text-gray-500 dark:text-gray-400">(Binary or unsupported file type)</pre>
+                  <pre className="whitespace-pre-wrap break-all text-gray-500 dark:text-gray-400 bg-gray-50 dark:bg-gray-900/50 p-4 rounded-lg">(Binary or unsupported file type)</pre>
                 )
               ) : (
                  <div className="text-gray-500 dark:text-gray-400 text-center py-8">
@@ -193,33 +183,33 @@ const Day = () => {
           {/* Sidebar */}
           <div className="w-full lg:w-80 flex-shrink-0 flex flex-col gap-6">
             {/* Files List */}
-            <div className="bg-white dark:bg-[#232946] rounded-xl shadow-lg p-4">
-              <h3 className="text-lg font-semibold text-blue-600 dark:text-blue-200 mb-2 flex items-center"><FaFileAlt className="mr-2" />Files in This Day</h3>
-              <ul className="space-y-2">
+            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-4 border border-gray-200 dark:border-gray-700">
+              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3 flex items-center"><FaFileAlt className="mr-2 text-blue-500" />Files</h3>
+              <ul className="space-y-2 max-h-64 overflow-y-auto custom-scrollbar">
                 {files.map((file, idx) => (
                   <li 
                     key={file} 
-                    className={`flex items-center gap-2 px-2 py-1 rounded cursor-pointer 
+                    className={`flex items-center gap-2 px-3 py-2 rounded-lg cursor-pointer transition
                                 ${selectedFileIdx === idx 
-                                  ? 'bg-gray-100 dark:bg-[#1a1f33] text-blue-600 dark:text-blue-300' 
-                                  : 'text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-[#1a1f33]'}`} 
+                                  ? 'bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400' 
+                                  : 'text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700'}`} 
                     onClick={() => setSelectedFileIdx(idx)}
                   >
                     {getFileIcon(file)}
-                    <span className="truncate">{file}</span>
+                    <span className="truncate text-sm">{file}</span>
                   </li>
                 ))}
               </ul>
             </div>
+            
             {/* Run & Learn */}
-            <div className="bg-white dark:bg-[#232946] rounded-xl shadow-lg p-4 flex flex-col gap-3">
-              <h3 className="text-lg font-semibold text-blue-600 dark:text-blue-200 mb-2 flex items-center"><FaTerminal className="mr-2" />Run & Learn</h3>
+            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-4 flex flex-col gap-3 border border-gray-200 dark:border-gray-700">
+              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2 flex items-center"><FaTerminal className="mr-2 text-green-500" />Quick Actions</h3>
               {files[selectedFileIdx] && getFileType(files[selectedFileIdx]) === "cpp" && (
                 <button
                   onClick={() => handleCopyRunCommand(files[selectedFileIdx])}
-                  className={`w-full flex items-center justify-center gap-2 px-4 py-2 rounded bg-blue-500 dark:bg-blue-600 text-white font-semibold hover:bg-blue-600 dark:hover:bg-blue-800 transition ${copied ? 'opacity-70' : ''}`}
+                  className={`w-full flex items-center justify-center gap-2 px-4 py-2 rounded-lg bg-blue-500 text-white font-medium hover:bg-blue-600 transition ${copied ? 'opacity-70' : ''}`}
                 >
-                  {/* 30 Days of C++ - By bhanu partap - learn more about me at https://github.com/Bhanu-partap-13*/}
                   {copied ? 'Copied!' : 'Copy Run Command'}
                 </button>
               )}
@@ -227,25 +217,26 @@ const Day = () => {
                 href="https://www.onlinegdb.com/online_c++_compiler"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full flex items-center justify-center gap-2 px-4 py-2 rounded bg-purple-500 dark:bg-purple-600 text-white font-semibold hover:bg-purple-600 dark:hover:bg-purple-800 transition"
+                className="w-full flex items-center justify-center gap-2 px-4 py-2 rounded-lg bg-purple-500 text-white font-medium hover:bg-purple-600 transition"
               >
                 Run Online <FaTerminal />
               </a>
             </div>
+            
             {/* Notes */}
-            <div className="bg-white dark:bg-[#232946] rounded-xl shadow-lg p-4 flex flex-col gap-2">
-              <h3 className="text-lg font-semibold text-blue-600 dark:text-blue-200 mb-2 flex items-center"><FaRegStickyNote className="mr-2" />Code Notes</h3>
+            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-4 flex flex-col gap-2 border border-gray-200 dark:border-gray-700">
+              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2 flex items-center"><FaRegStickyNote className="mr-2 text-yellow-500" />Notes</h3>
               <textarea
-                className="w-full min-h-[80px] rounded bg-gray-100 dark:bg-[#1a1f33] text-gray-900 dark:text-white p-2 resize-vertical focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400"
+                className="w-full min-h-[100px] rounded-lg bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white p-3 resize-vertical focus:outline-none focus:ring-2 focus:ring-blue-500 border border-gray-200 dark:border-gray-700"
                 placeholder="Write your notes here..."
                 value={notes}
                 onChange={handleNoteChange}
               />
               <button
                 onClick={() => setNotes("")}
-                className="self-end text-xs text-blue-500 dark:text-blue-300 hover:underline"
+                className="self-end text-xs text-blue-500 dark:text-blue-400 hover:underline"
               >
-                Clear
+                Clear Notes
               </button>
             </div>
           </div>

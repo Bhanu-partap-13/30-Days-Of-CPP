@@ -1,161 +1,344 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { 
+  FaCode, 
+  FaRocket, 
+  FaLightbulb, 
+  FaLayerGroup, 
+  FaLaptopCode,
+  FaBookOpen,
+  FaChartLine
+} from "react-icons/fa";
+import { HiCode, HiSparkles } from "react-icons/hi";
 import daysFiles from "../data/daysFiles.json";
-import { FaFolderOpen, FaCodeBranch, FaRocket } from "react-icons/fa";
-import ParticleBackground from "../components/ParticleBackground";
 
 const days = Array.from({ length: 30 }, (_, i) => i + 1);
 
-const cardVariants = {
-  hidden: { opacity: 0, y: 50, scale: 0.9 },
-  visible: (i) => ({
-    opacity: 1,
-    y: 0,
-    scale: 1,
-    transition: { delay: i * 0.05, type: "spring", stiffness: 100, damping: 12 },
-  }),
-};
+const Home = () => {
+  const features = [
+    {
+      icon: <FaCode />,
+      title: "30 Days Journey",
+      description: "Structured daily lessons from basics to advanced topics",
+      color: "from-blue-500 to-cyan-500"
+    },
+    {
+      icon: <FaLightbulb />,
+      title: "Practical Examples",
+      description: "Real-world code examples you can run and experiment with",
+      color: "from-purple-500 to-pink-500"
+    },
+    {
+      icon: <FaChartLine />,
+      title: "Progressive Learning",
+      description: "Build your skills step by step with increasing complexity",
+      color: "from-green-500 to-teal-500"
+    }
+  ];
 
-const Home = () => (
-  <div className="relative min-h-screen flex flex-col items-center justify-center text-white overflow-hidden">
-    <ParticleBackground />
-    <div className="relative z-10 w-full max-w-7xl px-4 py-16 flex flex-col items-center">
+  const sections = [
+    {
+      path: "/all-topics",
+      title: "DSA Topics",
+      description: "Arrays, Sorting, Searching & More",
+      icon: <FaLayerGroup />,
+      count: "15+ Problems",
+      color: "from-blue-500 to-cyan-500",
+      bgColor: "bg-blue-50 dark:bg-blue-900/20",
+      textColor: "text-blue-600 dark:text-blue-400"
+    },
+    {
+      path: "/leetcode",
+      title: "LeetCode",
+      description: "Optimized solutions to top problems",
+      icon: <FaLaptopCode />,
+      count: "7 Solutions",
+      color: "from-orange-500 to-red-500",
+      bgColor: "bg-orange-50 dark:bg-orange-900/20",
+      textColor: "text-orange-600 dark:text-orange-400"
+    },
+    {
+      path: "/problems",
+      title: "Problems",
+      description: "Curated competitive programming",
+      icon: <FaBookOpen />,
+      count: "Growing Collection",
+      color: "from-purple-500 to-pink-500",
+      bgColor: "bg-purple-50 dark:bg-purple-900/20",
+      textColor: "text-purple-600 dark:text-purple-400"
+    }
+  ];
+
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1
+      }
+    }
+  };
+
+  const itemVariants = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.5
+      }
+    }
+  };
+
+  return (
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
       {/* Hero Section */}
-      <motion.header 
-        initial={{ opacity: 0, y: -50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-        className="text-center mb-16 md:mb-24 pt-12 md:pt-0"
-      >
-        <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold tracking-tight mb-4">
-          <span 
-            className="bg-clip-text text-transparent bg-gradient-to-r from-[#00c6ff] via-[#0072ff] to-[#c471ed] dark:from-[#00c6ff] dark:via-[#0072ff] dark:to-[#f64f59] bg-[length:200%_auto] animate-text-gradient animate-text-glow"
+      <section className="relative overflow-hidden bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-900 dark:to-gray-900 border-b border-gray-200 dark:border-gray-800">
+        <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32 relative">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="text-center"
           >
-            30 Days of CPP
-          </span>
-        </h1>
-        <p className="text-lg md:text-2xl text-gray-600 dark:text-blue-200 font-medium max-w-3xl mx-auto mb-8">
-          Your accelerated journey to mastering C++. Dive into daily challenges, explore real code, and build your expertise from the ground up.
-        </p>
-        <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
-          <motion.button 
-            whileHover={{ scale: 1.05, boxShadow: "0px 0px 15px rgba(0, 198, 255, 0.7)" }}
-            whileTap={{ scale: 0.95 }}
-            className="px-8 py-3 bg-gradient-to-r from-blue-500 to-cyan-400 text-white font-semibold rounded-lg shadow-lg text-lg flex items-center gap-2"
-            onClick={() => document.getElementById('days-grid')?.scrollIntoView({ behavior: 'smooth' })}
-          >
-            <FaRocket /> Start Your Journey
-          </motion.button>
-          <Link to="/day/01">
-            <motion.button 
-              whileHover={{ scale: 1.05, boxShadow: "0px 0px 15px rgba(196, 113, 237, 0.7)" }}
-              whileTap={{ scale: 0.95 }}
-              className="px-8 py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold rounded-lg shadow-lg text-lg flex items-center gap-2"
+            <motion.div
+              initial={{ scale: 0 }}
+              animate={{ scale: 1 }}
+              transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
+              className="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 dark:bg-blue-900/30 rounded-full text-blue-600 dark:text-blue-400 text-sm font-medium mb-6"
             >
-              <FaCodeBranch /> Go to Day 1
-            </motion.button>
-          </Link>
-        </div>
-      </motion.header>
-
-      {/* About Section */}
-      <section className="w-full flex flex-col items-center mb-16">
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 dark:text-white mb-10">
-          About This Journey
-        </h2>
-        <div className="w-full flex flex-col md:flex-row gap-10 justify-center items-stretch max-w-7xl">
-          <motion.div
-            className="flex-1 w-full max-w-[480px] h-36 bg-gradient-to-br from-blue-900/90 to-blue-800/90 backdrop-blur-lg rounded-2xl p-8 shadow-xl flex flex-col justify-center items-center text-center border border-blue-700"
-            whileHover={{ scale: 1.03, transition: { duration: 0.2 } }}
-          >
-            <motion.div whileHover={{ scale: 1.05 }} className="text-3xl mb-3 text-cyan-400">{"</>"}</motion.div>
-            <motion.h3 whileHover={{ scale: 1.05 }} className="text-xl font-bold text-white mb-2">Structured Learning</motion.h3>
-            <motion.p whileHover={{ scale: 1.05 }} className="text-blue-100 text-sm">Each day focuses on specific C++ concepts, building on previous knowledge for optimal retention.</motion.p>
-          </motion.div>
-          <motion.div
-            className="flex-1 w-full max-w-[480px] h-36 bg-gradient-to-br from-blue-900/90 to-blue-800/90 backdrop-blur-lg rounded-2xl p-8 shadow-xl flex flex-col justify-center items-center text-center border border-blue-700"
-            whileHover={{ scale: 1.03, transition: { duration: 0.2 } }}
-          >
-            <motion.div whileHover={{ scale: 1.05 }} className="text-3xl mb-3 text-cyan-400">{"⚡"}</motion.div>
-            <motion.h3 whileHover={{ scale: 1.05 }} className="text-xl font-bold text-white mb-2">Practical Code</motion.h3>
-            <motion.p whileHover={{ scale: 1.05 }} className="text-blue-100 text-sm">Every concept comes with real-world coding examples that you can run and experiment with.</motion.p>
-          </motion.div>
-          <motion.div
-            className="flex-1 w-full max-w-[480px] h-36 bg-gradient-to-br from-blue-900/90 to-blue-800/90 backdrop-blur-lg rounded-2xl p-8 shadow-xl flex flex-col justify-center items-center text-center border border-blue-700"
-            whileHover={{ scale: 1.03, transition: { duration: 0.2 } }}
-          >
-            <motion.div whileHover={{ scale: 1.05 }} className="text-3xl mb-3 text-cyan-400">{"🎓"}</motion.div>
-            <motion.h3 whileHover={{ scale: 1.05 }} className="text-xl font-bold text-white mb-2">Comprehensive Coverage</motion.h3>
-            <motion.p whileHover={{ scale: 1.05 }} className="text-blue-100 text-sm">From core fundamentals to advanced topics like multithreading, networking, and design patterns.</motion.p>
+              <HiSparkles className="text-lg" />
+              Master C++ in 30 Days
+            </motion.div>
+            
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
+              Learn C++ from
+              <span className="block bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 dark:from-blue-400 dark:via-purple-400 dark:to-pink-400 text-transparent bg-clip-text">
+                Zero to Hero
+              </span>
+            </h1>
+            
+            <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto mb-10">
+              Your accelerated journey to mastering C++. Dive into daily challenges, 
+              explore real code, and build your expertise from the ground up.
+            </p>
+            
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <Link to="/day/01">
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all flex items-center gap-2"
+                >
+                  <FaRocket />
+                  Start Learning
+                </motion.button>
+              </Link>
+              <button
+                onClick={() => document.getElementById('explore-section')?.scrollIntoView({ behavior: 'smooth' })}
+                className="px-8 py-4 bg-white dark:bg-gray-800 text-gray-900 dark:text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all border border-gray-200 dark:border-gray-700"
+              >
+                Explore Sections
+              </button>
+            </div>
           </motion.div>
         </div>
       </section>
 
-      {/* Days Grid Section */}
-      <section id="days-grid" className="w-full">
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 dark:text-white mb-10 md:mb-12">
-          Explore Each Day
-        </h2>
-        <motion.div
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto"
-          initial="hidden"
-          animate="visible"
-          variants={{}}
-        >
-          {days.map((day, i) => {
-            const dayKey = `Day${day.toString().padStart(2, "0")}`;
-            const fileCount = daysFiles[dayKey]?.length || 0;
-            return (
+      {/* Features Section */}
+      <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+              Why Choose This Course?
+            </h2>
+            <p className="text-gray-600 dark:text-gray-400 text-lg max-w-2xl mx-auto">
+              Everything you need to master C++ programming in one place
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {features.map((feature, index) => (
               <motion.div
-                key={day}
-                custom={i}
-                variants={cardVariants}
-                initial="hidden"
-                animate="visible"
-                className="relative bg-[#181f36] dark:bg-black/40 border border-blue-800 rounded-2xl shadow-xl p-8 flex flex-col items-center justify-center text-center transition-all duration-300 hover:border-cyan-500 dark:hover:border-cyan-400 hover:shadow-cyan-500/30 group overflow-hidden w-full max-w-[480px] h-36 mx-auto"
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+                className="group relative bg-white dark:bg-gray-800 rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-200 dark:border-gray-700 overflow-hidden"
               >
-                <motion.div 
-                  className="flex items-center gap-2 mb-2"
-                  whileHover={{ scale: 1.05 }}
-                >
-                  <span className="text-2xl text-cyan-400">{"</>"}</span>
-                  <h3 className="text-3xl font-bold text-white">Day {day.toString().padStart(2,"0")}</h3>
-                </motion.div>
-                <div className="flex-grow flex flex-col items-center justify-center w-full">
-                  <motion.div 
-                    className="text-gray-300 mb-1 truncate w-full text-sm"
-                    whileHover={{ scale: 1.05 }}
-                  >
-                    {/* Optionally, add a short description here if available */}
-                  </motion.div>
-                  <motion.div 
-                    className="w-full flex items-center justify-center mt-1 mb-1"
-                    whileHover={{ scale: 1.05 }}
-                  >
-                    <FaFolderOpen className="text-cyan-400 mr-2" /> 
-                    <div className="text-sm text-blue-200">{fileCount} {fileCount === 1 ? 'Topic' : 'Topics'}</div>
-                  </motion.div>
+                <div className={`absolute top-0 right-0 w-32 h-32 bg-gradient-to-br ${feature.color} opacity-10 rounded-full -mr-16 -mt-16 group-hover:scale-150 transition-transform duration-500`}></div>
+                
+                <div className="relative">
+                  <div className={`w-14 h-14 rounded-xl bg-gradient-to-br ${feature.color} flex items-center justify-center text-white text-2xl mb-6 group-hover:scale-110 transition-transform`}>
+                    {feature.icon}
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
+                    {feature.title}
+                  </h3>
+                  <p className="text-gray-600 dark:text-gray-400">
+                    {feature.description}
+                  </p>
                 </div>
-                <Link
-                  to={`/day/${day.toString().padStart(2, "0")}`}
-                  className="absolute top-4 right-4 w-8 h-8 flex items-center justify-center rounded-full bg-blue-800 hover:bg-cyan-500 transition-colors text-white text-lg shadow-md"
-                  title={`Go to Day ${day}`}
-                >
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-5 h-5">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </Link>
               </motion.div>
-            );
-          })}
-        </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Sections Grid */}
+      <section id="explore-section" className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-800/50">
+        <div className="max-w-7xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+              Explore Different Sections
+            </h2>
+            <p className="text-gray-600 dark:text-gray-400 text-lg">
+              Practice with DSA topics, LeetCode problems, and more
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {sections.map((section, index) => (
+              <Link key={index} to={section.path}>
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.1 }}
+                  whileHover={{ y: -8, scale: 1.02 }}
+                  className={`${section.bgColor} rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-200 dark:border-gray-700 group cursor-pointer`}
+                >
+                  <div className={`w-16 h-16 rounded-xl bg-gradient-to-br ${section.color} flex items-center justify-center text-white text-3xl mb-6 group-hover:scale-110 transition-transform`}>
+                    {section.icon}
+                  </div>
+                  <h3 className={`text-2xl font-bold ${section.textColor} mb-3`}>
+                    {section.title}
+                  </h3>
+                  <p className="text-gray-700 dark:text-gray-300 mb-4">
+                    {section.description}
+                  </p>
+                  <div className={`text-sm font-semibold ${section.textColor} flex items-center justify-between`}>
+                    <span>{section.count}</span>
+                    <span className="transform group-hover:translate-x-2 transition-transform">→</span>
+                  </div>
+                </motion.div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 30 Days Grid */}
+      <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+              30 Days Curriculum
+            </h2>
+            <p className="text-gray-600 dark:text-gray-400 text-lg">
+              Select any day to start learning
+            </p>
+          </motion.div>
+
+          <motion.div
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-6 gap-4"
+          >
+            {days.map((day) => {
+              const dayFolder = `Day${day.toString().padStart(2, "0")}`;
+              const hasContent = daysFiles[dayFolder]?.length > 0;
+              
+              return (
+                <motion.div key={day} variants={itemVariants}>
+                  <Link
+                    to={`/day/${day.toString().padStart(2, "0")}`}
+                    className={`block group`}
+                  >
+                    <div className={`relative overflow-hidden rounded-xl p-6 transition-all duration-300 border ${
+                      hasContent
+                        ? 'bg-white dark:bg-gray-800 hover:shadow-xl hover:scale-105 border-gray-200 dark:border-gray-700 hover:border-blue-400 dark:hover:border-blue-600'
+                        : 'bg-gray-100 dark:bg-gray-800/50 border-gray-200 dark:border-gray-700 opacity-50'
+                    }`}>
+                      <div className="text-center">
+                        <div className={`text-3xl font-bold mb-2 ${
+                          hasContent 
+                            ? 'text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400' 
+                            : 'text-gray-400 dark:text-gray-600'
+                        } transition-colors`}>
+                          {day}
+                        </div>
+                        <div className={`text-xs font-medium ${
+                          hasContent 
+                            ? 'text-gray-500 dark:text-gray-400' 
+                            : 'text-gray-400 dark:text-gray-600'
+                        }`}>
+                          Day {day}
+                        </div>
+                      </div>
+                      {hasContent && (
+                        <div className="absolute inset-0 bg-gradient-to-br from-blue-500/0 to-purple-500/0 group-hover:from-blue-500/10 group-hover:to-purple-500/10 transition-all duration-300 rounded-xl"></div>
+                      )}
+                    </div>
+                  </Link>
+                </motion.div>
+              );
+            })}
+          </motion.div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-600 to-purple-600 dark:from-blue-700 dark:to-purple-700">
+        <div className="max-w-4xl mx-auto text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <HiCode className="text-6xl text-white mx-auto mb-6" />
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+              Ready to Start Your Journey?
+            </h2>
+            <p className="text-xl text-blue-100 mb-8">
+              Join thousands of developers mastering C++ one day at a time
+            </p>
+            <Link to="/day/01">
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="px-10 py-4 bg-white text-blue-600 font-bold rounded-xl shadow-2xl hover:shadow-3xl transition-all text-lg"
+              >
+                Begin Day 1 Now
+              </motion.button>
+            </Link>
+          </motion.div>
+        </div>
       </section>
     </div>
-  </div>
-);
+  );
+};
 
 export default Home;
-
-// 30 Days of C++ - By bhanu partap - learn more about me at https://github.com/Bhanu-partap-13
 

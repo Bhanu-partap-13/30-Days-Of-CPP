@@ -1,5 +1,6 @@
-import React, { Suspense } from "react";
+import React, { Suspense, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Toaster } from 'react-hot-toast';
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Loader from "./components/Loader";
@@ -8,18 +9,32 @@ import { ThemeProvider } from "./contexts/ThemeContext";
 // Lazy load pages
 const Home = React.lazy(() => import("./pages/Home"));
 const Day = React.lazy(() => import("./pages/Day"));
+const AllTopics = React.lazy(() => import("./pages/AllTopics"));
+const Topics = React.lazy(() => import("./pages/Topics"));
+const Leetcode = React.lazy(() => import("./pages/Leetcode"));
+const Problems = React.lazy(() => import("./pages/Problems"));
 
 function App() {
+  useEffect(() => {
+    // Enable smooth scrolling
+    document.documentElement.style.scrollBehavior = 'smooth';
+  }, []);
+
   return (
     <ThemeProvider>
       <Router>
-        <div className="flex flex-col min-h-screen bg-gray-100 dark:bg-gradient-to-br dark:from-[#181c2b] dark:via-[#232946] dark:to-[#181c2b]">
+        <div className="flex flex-col min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
           <Navbar />
+          <Toaster />
           <main className="flex-1 pt-16">
             <Suspense fallback={<Loader />}>
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/day/:dayId" element={<Day />} />
+                <Route path="/all-topics" element={<AllTopics />} />
+                <Route path="/topics/:topicName" element={<Topics />} />
+                <Route path="/leetcode" element={<Leetcode />} />
+                <Route path="/problems" element={<Problems />} />
               </Routes>
             </Suspense>
           </main>
