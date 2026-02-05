@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { 
@@ -13,10 +13,13 @@ import {
 import { HiCode, HiSparkles } from "react-icons/hi";
 import daysFiles from "../data/daysFiles.json";
 import AnimatedCodeDisplay from "../components/AnimatedCodeDisplay";
+import { DayCard, GlobalSpotlight } from "../components/DayCard";
 
 const days = Array.from({ length: 30 }, (_, i) => i + 1);
 
 const Home = () => {
+  const curriculumRef = useRef(null);
+  
   const features = [
     {
       icon: <FaCode />,
@@ -256,7 +259,9 @@ const Home = () => {
       </section>
 
       {/* 30 Days Grid */}
-      <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8">
+      <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 relative" ref={curriculumRef}>
+        <GlobalSpotlight containerRef={curriculumRef} />
+        
         <div className="max-w-7xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -268,57 +273,25 @@ const Home = () => {
               30 Days Curriculum
             </h2>
             <p className="text-gray-600 dark:text-gray-400 text-lg">
-              Select any day to start learning
+              Hover over any day to see the magic ✨
             </p>
           </motion.div>
 
-          <motion.div
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-6 gap-4"
-          >
-            {days.map((day) => {
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            {days.map((day, index) => {
               const dayFolder = `Day${day.toString().padStart(2, "0")}`;
               const hasContent = daysFiles[dayFolder]?.length > 0;
               
               return (
-                <motion.div key={day} variants={itemVariants}>
-                  <Link
-                    to={`/day/${day.toString().padStart(2, "0")}`}
-                    className={`block group`}
-                  >
-                    <div className={`relative overflow-hidden rounded-xl p-6 transition-all duration-300 border ${
-                      hasContent
-                        ? 'bg-white dark:bg-gray-800 hover:shadow-xl hover:scale-105 border-gray-200 dark:border-gray-700 hover:border-blue-400 dark:hover:border-blue-600'
-                        : 'bg-gray-100 dark:bg-gray-800/50 border-gray-200 dark:border-gray-700 opacity-50'
-                    }`}>
-                      <div className="text-center">
-                        <div className={`text-3xl font-bold mb-2 ${
-                          hasContent 
-                            ? 'text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400' 
-                            : 'text-gray-400 dark:text-gray-600'
-                        } transition-colors`}>
-                          {day}
-                        </div>
-                        <div className={`text-xs font-medium ${
-                          hasContent 
-                            ? 'text-gray-500 dark:text-gray-400' 
-                            : 'text-gray-400 dark:text-gray-600'
-                        }`}>
-                          Day {day}
-                        </div>
-                      </div>
-                      {hasContent && (
-                        <div className="absolute inset-0 bg-gradient-to-br from-blue-500/0 to-purple-500/0 group-hover:from-blue-500/10 group-hover:to-purple-500/10 transition-all duration-300 rounded-xl"></div>
-                      )}
-                    </div>
-                  </Link>
-                </motion.div>
+                <DayCard 
+                  key={day} 
+                  day={day} 
+                  hasContent={hasContent}
+                  index={index}
+                />
               );
             })}
-          </motion.div>
+          </div>
         </div>
       </section>
 

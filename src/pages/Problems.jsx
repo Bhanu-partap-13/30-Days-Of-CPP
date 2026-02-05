@@ -31,13 +31,18 @@ const Problems = () => {
   };
 
   const loadFileContent = async (fileName) => {
+    if (!fileName) return;
+    
     try {
       const response = await fetch(`/Problems/${fileName}`);
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
       const content = await response.text();
       setFileContent(content);
     } catch (error) {
       console.error('Error loading file content:', error);
-      setFileContent('// Error loading file content');
+      setFileContent(`// Error loading file: ${fileName}\n// Please check if the file exists at /Problems/${fileName}`);
     }
   };
 

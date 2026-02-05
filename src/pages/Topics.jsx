@@ -20,39 +20,17 @@ const Topics = () => {
     if (selectedFile) {
       loadFileContent(selectedFile);
     }
-  }, [selectedFile]);
+  }, [selectedFile, topicName]);
 
-  const loadFiles = async () => {
-    try {
-      setLoading(true);
-      // Fetch all .cpp files from the Topics directory
-      const response = await fetch(`/Topics/${topicName}/`);
-      const text = await response.text();
-      
-      // Extract .cpp file names from directory listing
-      const parser = new DOMParser();
-      const doc = parser.parseFromString(text, 'text/html');
-      const links = Array.from(doc.querySelectorAll('a'));
-      const cppFiles = links
-        .map(link => link.getAttribute('href'))
-        .filter(href => href && href.endsWith('.cpp'))
-        .map(href => href.split('/').pop());
-
-      setFiles(cppFiles);
-      if (cppFiles.length > 0) {
-        setSelectedFile(cppFiles[0]);
-      }
-    } catch (error) {
-      console.error('Error loading files:', error);
-      // Fallback: try to load known files based on topic
-      const fallbackFiles = getFallbackFiles(topicName);
-      setFiles(fallbackFiles);
-      if (fallbackFiles.length > 0) {
-        setSelectedFile(fallbackFiles[0]);
-      }
-    } finally {
-      setLoading(false);
+  const loadFiles = () => {
+    setLoading(true);
+    // Use predefined file lists for each topic
+    const fallbackFiles = getFallbackFiles(topicName);
+    setFiles(fallbackFiles);
+    if (fallbackFiles.length > 0) {
+      setSelectedFile(fallbackFiles[0]);
     }
+    setLoading(false);
   };
 
   const getFallbackFiles = (topic) => {
@@ -67,13 +45,21 @@ const Topics = () => {
   };
 
   const loadFileContent = async (fileName) => {
+    if (!fileName) return;
+    
     try {
+      setLoading(true);
       const response = await fetch(`/Topics/${topicName}/${fileName}`);
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
       const content = await response.text();
       setFileContent(content);
     } catch (error) {
       console.error('Error loading file content:', error);
-      setFileContent('// Error loading file content');
+      setFileContent(`// Error loading file: ${fileName}\n// Please check if the file exists at /Topics/${topicName}/${fileName}`);
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -141,16 +127,33 @@ const Topics = () => {
             animate={{ opacity: 1, x: 0 }}
             className="lg:col-span-3"
           >
-            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6">
-              <h2 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
-                {selectedFile}
-              </h2>
-              {fileContent ? (
-                <CodeBlock code={fileContent} language="cpp" fileName={selectedFile} />
-              ) : (
-                <div className="text-center py-12 text-gray-500 dark:text-gray-400">
-                  Select a file to view its content
+            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 border border-gray-200 dark:border-gray-700">
+              {files.length === 0 ? (
+                <div className="text-center py-12">
+                  <p className="text-gray-500 dark:text-gray-400 text-lg mb-2">
+                    No files available for this topic yet.
+                  </p>
+                  <p className="text-gray-400 dark:text-gray-500 text-sm">
+                    Coming soon!
+                  </p>
                 </div>
+              ) : (
+                <>
+                  <h2 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+                    {selectedFile}
+                  </h2>
+                  {loading ? (
+                    <div className="text-center py-12">
+                      <Loader />
+                    </div>
+                  ) : fileContent ? (
+                    <CodeBlock code={fileContent} language="cpp" fileName={selectedFile} />
+                  ) : (
+                    <div className="text-center py-12 text-gray-500 dark:text-gray-400">
+                      Select a file to view its content
+                    </div>
+                  )}
+                </>
               )}
             </div>
           </motion.div>
