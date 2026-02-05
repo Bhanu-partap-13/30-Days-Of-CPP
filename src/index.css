@@ -200,10 +200,11 @@ body {
   inset: 0;
   padding: 2px;
   background: radial-gradient(
-    300px circle at var(--glow-x) var(--glow-y),
-    rgba(59, 130, 246, calc(var(--glow-intensity) * 0.8)) 0%,
-    rgba(139, 92, 246, calc(var(--glow-intensity) * 0.4)) 30%,
-    transparent 60%
+    200px circle at var(--glow-x) var(--glow-y),
+    rgba(30, 64, 175, calc(var(--glow-intensity) * 0.6)) 0%,
+    rgba(67, 56, 202, calc(var(--glow-intensity) * 0.3)) 25%,
+    rgba(30, 58, 138, calc(var(--glow-intensity) * 0.15)) 50%,
+    transparent 70%
   );
   border-radius: inherit;
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
@@ -212,7 +213,7 @@ body {
   mask-composite: exclude;
   pointer-events: none;
   opacity: 1;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.4s ease;
   z-index: 1;
 }
 
@@ -221,14 +222,14 @@ body {
 }
 
 .day-card--active:hover {
-  box-shadow: 0 8px 30px rgba(59, 130, 246, 0.3), 
-              0 0 40px rgba(139, 92, 246, 0.2);
-  border-color: rgba(59, 130, 246, 0.6);
+  box-shadow: 0 6px 24px rgba(30, 58, 138, 0.2), 
+              0 0 30px rgba(67, 56, 202, 0.15);
+  border-color: rgba(59, 130, 246, 0.5);
 }
 
 .dark .day-card--active:hover {
-  box-shadow: 0 8px 30px rgba(59, 130, 246, 0.4), 
-              0 0 40px rgba(139, 92, 246, 0.3);
+  box-shadow: 0 6px 24px rgba(30, 64, 175, 0.25), 
+              0 0 30px rgba(67, 56, 202, 0.2);
 }
 
 /* Particle styles */

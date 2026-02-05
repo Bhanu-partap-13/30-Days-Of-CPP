@@ -24,11 +24,11 @@ const DayCard = ({ day, hasContent, index }) => {
           particle.className = 'day-particle';
           particle.style.cssText = `
             position: absolute;
-            width: 4px;
-            height: 4px;
+            width: 3px;
+            height: 3px;
             border-radius: 50%;
-            background: rgba(59, 130, 246, 1);
-            box-shadow: 0 0 8px rgba(59, 130, 246, 0.8);
+            background: rgba(37, 99, 235, 0.8);
+            box-shadow: 0 0 6px rgba(37, 99, 235, 0.5);
             pointer-events: none;
             left: ${Math.random() * 100}%;
             top: ${Math.random() * 100}%;
@@ -212,21 +212,21 @@ const GlobalSpotlight = ({ containerRef }) => {
     spotlight.className = 'curriculum-spotlight';
     spotlight.style.cssText = `
       position: fixed;
-      width: 700px;
-      height: 700px;
+      width: 500px;
+      height: 500px;
       border-radius: 50%;
       pointer-events: none;
       background: radial-gradient(circle,
-        rgba(59, 130, 246, 0.2) 0%,
-        rgba(139, 92, 246, 0.12) 20%,
-        rgba(59, 130, 246, 0.06) 35%,
-        transparent 60%
+        rgba(30, 58, 138, 0.12) 0%,
+        rgba(67, 56, 202, 0.08) 25%,
+        rgba(30, 58, 138, 0.04) 45%,
+        transparent 70%
       );
       z-index: 5;
       opacity: 0;
       transform: translate(-50%, -50%);
-      mix-blend-mode: screen;
-      transition: opacity 0.3s ease;
+      mix-blend-mode: multiply;
+      transition: opacity 0.4s ease;
     `;
     document.body.appendChild(spotlight);
     spotlightRef.current = spotlight;
@@ -243,9 +243,9 @@ const GlobalSpotlight = ({ containerRef }) => {
         gsap.to(spotlightRef.current, {
           left: e.clientX,
           top: e.clientY,
-          opacity: 0.9,
-          duration: 0.2,
-          ease: 'power2.out'
+          opacity: 0.6,
+          duration: 0.3,
+          ease: 'power1.out'
         });
       } else {
         gsap.to(spotlightRef.current, {
