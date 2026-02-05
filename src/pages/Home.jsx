@@ -12,6 +12,7 @@ import {
 } from "react-icons/fa";
 import { HiCode, HiSparkles } from "react-icons/hi";
 import daysFiles from "../data/daysFiles.json";
+import AnimatedCodeDisplay from "../components/AnimatedCodeDisplay";
 
 const days = Array.from({ length: 30 }, (_, i) => i + 1);
 
@@ -97,53 +98,65 @@ const Home = () => {
       <section className="relative overflow-hidden bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-900 dark:to-gray-900 border-b border-gray-200 dark:border-gray-800">
         <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32 relative">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="text-center"
-          >
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Left side - Text content */}
             <motion.div
-              initial={{ scale: 0 }}
-              animate={{ scale: 1 }}
-              transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
-              className="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 dark:bg-blue-900/30 rounded-full text-blue-600 dark:text-blue-400 text-sm font-medium mb-6"
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
             >
-              <HiSparkles className="text-lg" />
-              Master C++ in 30 Days
-            </motion.div>
-            
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
-              Learn C++ from
-              <span className="block bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 dark:from-blue-400 dark:via-purple-400 dark:to-pink-400 text-transparent bg-clip-text">
-                Zero to Hero
-              </span>
-            </h1>
-            
-            <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto mb-10">
-              Your accelerated journey to mastering C++. Dive into daily challenges, 
-              explore real code, and build your expertise from the ground up.
-            </p>
-            
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Link to="/day/01">
-                <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all flex items-center gap-2"
-                >
-                  <FaRocket />
-                  Start Learning
-                </motion.button>
-              </Link>
-              <button
-                onClick={() => document.getElementById('explore-section')?.scrollIntoView({ behavior: 'smooth' })}
-                className="px-8 py-4 bg-white dark:bg-gray-800 text-gray-900 dark:text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all border border-gray-200 dark:border-gray-700"
+              <motion.div
+                initial={{ scale: 0 }}
+                animate={{ scale: 1 }}
+                transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
+                className="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 dark:bg-blue-900/30 rounded-full text-blue-600 dark:text-blue-400 text-sm font-medium mb-6"
               >
-                Explore Sections
-              </button>
-            </div>
-          </motion.div>
+                <HiSparkles className="text-lg" />
+                Master C++ in 30 Days
+              </motion.div>
+              
+              <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
+                Learn C++ from
+                <span className="block bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 dark:from-blue-400 dark:via-purple-400 dark:to-pink-400 text-transparent bg-clip-text mt-2">
+                  Zero to Hero
+                </span>
+              </h1>
+              
+              <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 mb-10">
+                Your accelerated journey to mastering C++. Dive into daily challenges, 
+                explore real code, and build your expertise from the ground up.
+              </p>
+              
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link to="/day/01">
+                  <motion.button
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all flex items-center gap-2"
+                  >
+                    <FaRocket />
+                    Start Learning
+                  </motion.button>
+                </Link>
+                <button
+                  onClick={() => document.getElementById('explore-section')?.scrollIntoView({ behavior: 'smooth' })}
+                  className="px-8 py-4 bg-white dark:bg-gray-800 text-gray-900 dark:text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all border border-gray-200 dark:border-gray-700"
+                >
+                  Explore Sections
+                </button>
+              </div>
+            </motion.div>
+
+            {/* Right side - Animated Code Display */}
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="hidden lg:block"
+            >
+              <AnimatedCodeDisplay />
+            </motion.div>
+          </div>
         </div>
       </section>
 
