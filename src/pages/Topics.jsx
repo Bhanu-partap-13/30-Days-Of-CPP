@@ -36,10 +36,11 @@ const Topics = () => {
   const getFallbackFiles = (topic) => {
     const fileMap = {
       'Array': ['arr.cpp', 'duplicate_map_arr.cpp', 'maxsubarray.cpp', 'minsubarray.cpp', 'noOfSubArray.cpp', 'subArray.cpp', 'subArrayCount.cpp', 'twoSum.cpp', 'twoSumOptimized.cpp'],
-      'LinkedList': ['FindMidElement.cpp'],
-      'Sort': ['bubblesort.cpp', 'duthcFlag.cpp', 'insertionSort.cpp', 'mergeSort.cpp', 'pushinZerToEnd.cpp', 'selectionSort.cpp'],
-      'Search': [],
-      'Pattern Matching': []
+      'LinkedList': ['FindMidElement.cpp', 'isPalindrome.cpp'],
+      'Sort': ['bubblesort.cpp', 'duthcFlag.cpp', 'insertionSort.cpp', 'mergeSort.cpp', 'pushinZerToEnd.cpp', 'quicksort.cpp', 'selectionSort.cpp'],
+      'Search': ['binarySearch.cpp', 'binarySearch2.cpp', 'kavinSearch.cpp', 'peakElement.cpp', 'peakElement2.cpp', 'peakElement3.cpp'],
+      'Pattern Matching': ['01.cpp', '02.cpp', '03.cpp', 'pascal.cpp'],
+      'Tree': ['balancedtree.cpp']
     };
     return fileMap[topic] || [];
   };

@@ -24,28 +24,35 @@ const AllTopics = () => {
       icon: <FaLink />,
       color: 'from-purple-500 to-pink-500',
       description: 'Linked list operations and problems',
-      count: 1
+      count: 2
     },
     {
       name: 'Sort',
       icon: <FaSort />,
       color: 'from-green-500 to-teal-500',
       description: 'Sorting algorithms and techniques',
-      count: 6
+      count: 7
     },
     {
       name: 'Search',
       icon: <FaSearch />,
       color: 'from-orange-500 to-red-500',
       description: 'Searching algorithms',
-      count: 0
+      count: 6
     },
     {
       name: 'Pattern Matching',
       icon: <FaProjectDiagram />,
       color: 'from-indigo-500 to-purple-500',
       description: 'Pattern matching algorithms',
-      count: 0
+      count: 4
+    },
+    {
+      name: 'Tree',
+      icon: <FaProjectDiagram />,
+      color: 'from-pink-500 to-rose-500',
+      description: 'Tree data structure and algorithms',
+      count: 1
     },
   ];
 
