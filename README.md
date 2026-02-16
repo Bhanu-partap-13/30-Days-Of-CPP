@@ -2,7 +2,7 @@
 <div align="center">
 <div id="top">
 
-# <p>30 Days of C++ Challenge
+# <p>30 Days of C++ Challenge + DSA IN CPP
 </p>
 
 ## Live Preview: https://30-days-of-cpp-j237.vercel.app/
