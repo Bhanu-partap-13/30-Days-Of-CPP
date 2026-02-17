@@ -2,7 +2,7 @@
 <div align="center">
 <div id="top">
 
-# <p>30 Days of C++ Challenge
+# <p>30 Days of C++ Challenge + DSA IN CPP
 </p>
 
 ## Live Preview: https://30-days-of-cpp-j237.vercel.app/
@@ -149,7 +149,7 @@ Happy Coding! 🚀✨
 
 <div align='center'>
 
-[![Stargazers repo roster for @Bhanu-partap-13/30-Days-Of-CPP](https://reporoster.com/stars/Bhanu-partap-13/30-Days-Of-CPP)](https://github.com/Bhanu-partap-13/30-Days-Of-CPP/stargazers)
+[![Stargazers repo roster for @Bhanu-partap-13/30-Days-Of-CPP](https://reporoster.com/stars/Bhanu-partap-13/DSA_IN_CPP)](https://github.com/Bhanu-partap-13/DSA_IN_CPP/stargazers)
 
 </div>
 
@@ -157,7 +157,7 @@ Happy Coding! 🚀✨
 
 <div align='center'>
 
-[![Forkers repo roster for @Bhanu-partap-13/30-Days-Of-CPP](https://reporoster.com/forks/Bhanu-partap-13/30-Days-Of-CPP)](https://github.com/Bhanu-partap-13/30-Days-Of-CPP/network/members)
+[![Forkers repo roster for @Bhanu-partap-13/30-Days-Of-CPP](https://reporoster.com/forks/Bhanu-partap-13/DSA_IN_CPP)](https://github.com/Bhanu-partap-13/DSA_IN_CPP/network/members)
 
 </div>
 
